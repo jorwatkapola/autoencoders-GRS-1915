@@ -1,0 +1,27 @@
+2019-12-18 18:10:05.204878: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2019-12-18 18:10:05.339534: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-12-18 18:10:05.340785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 11.91GiB freeMemory: 11.73GiB
+2019-12-18 18:10:05.340803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2019-12-18 18:10:05.574130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-18 18:10:05.574174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2019-12-18 18:10:05.574183: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2019-12-18 18:10:05.574453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11348 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-12-18 18:10:05.881172: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x55e5723c3b80
+Train on 32962 samples, validate on 1735 samples
+Epoch 1/250
+ - 53s - loss: nan - val_loss: nan
+
+Epoch 00001: val_loss did not improve from inf
+Epoch 2/250
+ - 52s - loss: nan - val_loss: nan
+
+Epoch 00002: val_loss did not improve from inf
+Epoch 3/250
+ - 52s - loss: nan - val_loss: nan
+
+Epoch 00003: val_loss did not improve from inf
+Epoch 4/250
+ - 52s - loss: nan - val_loss: nan

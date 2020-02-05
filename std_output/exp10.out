@@ -1,0 +1,122 @@
+2019-12-17 19:21:12.001230: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2019-12-17 19:21:12.136916: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-12-17 19:21:12.138087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 11.91GiB freeMemory: 11.73GiB
+2019-12-17 19:21:12.138105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2019-12-17 19:21:12.371394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-17 19:21:12.371461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2019-12-17 19:21:12.371475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2019-12-17 19:21:12.371754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11348 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-12-17 19:21:12.613332: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x55a27b1b7920
+Train on 32962 samples, validate on 1735 samples
+Epoch 1/250
+ - 110s - loss: 0.1273 - val_loss: 0.1286
+
+Epoch 00001: val_loss improved from inf to 0.12861, saving model to lstm_autoencoder_2019-12-17_19-21-12.h5
+Epoch 2/250
+ - 109s - loss: 0.1250 - val_loss: 0.1321
+
+Epoch 00002: val_loss did not improve from 0.12861
+Epoch 3/250
+ - 109s - loss: 0.1255 - val_loss: 0.1490
+
+Epoch 00003: val_loss did not improve from 0.12861
+Epoch 4/250
+ - 109s - loss: 0.1251 - val_loss: 0.1276
+
+Epoch 00004: val_loss improved from 0.12861 to 0.12764, saving model to lstm_autoencoder_2019-12-17_19-21-12.h5
+Epoch 5/250
+ - 109s - loss: 0.1238 - val_loss: 0.1756
+
+Epoch 00005: val_loss did not improve from 0.12764
+Epoch 6/250
+ - 109s - loss: 0.1277 - val_loss: 0.2974
+
+Epoch 00006: val_loss did not improve from 0.12764
+Epoch 7/250
+ - 109s - loss: 0.1656 - val_loss: 0.2091
+
+Epoch 00007: val_loss did not improve from 0.12764
+Epoch 8/250
+ - 109s - loss: 0.1332 - val_loss: 0.1297
+
+Epoch 00008: val_loss did not improve from 0.12764
+Epoch 9/250
+ - 109s - loss: 0.1271 - val_loss: 0.1841
+
+Epoch 00009: val_loss did not improve from 0.12764
+Epoch 10/250
+ - 109s - loss: 0.1310 - val_loss: 0.1267
+
+Epoch 00010: val_loss improved from 0.12764 to 0.12670, saving model to lstm_autoencoder_2019-12-17_19-21-12.h5
+Epoch 11/250
+ - 109s - loss: 0.1228 - val_loss: 0.1235
+
+Epoch 00011: val_loss improved from 0.12670 to 0.12349, saving model to lstm_autoencoder_2019-12-17_19-21-12.h5
+Epoch 12/250
+ - 109s - loss: 0.1219 - val_loss: 0.1195
+
+Epoch 00012: val_loss improved from 0.12349 to 0.11952, saving model to lstm_autoencoder_2019-12-17_19-21-12.h5
+Epoch 13/250
+ - 109s - loss: 0.1243 - val_loss: 0.1265
+
+Epoch 00013: val_loss did not improve from 0.11952
+Epoch 14/250
+ - 109s - loss: 0.1222 - val_loss: 0.1579
+
+Epoch 00014: val_loss did not improve from 0.11952
+Epoch 15/250
+ - 109s - loss: 0.1294 - val_loss: 0.1267
+
+Epoch 00015: val_loss did not improve from 0.11952
+Epoch 16/250
+ - 109s - loss: 0.1231 - val_loss: 0.1250
+
+Epoch 00016: val_loss did not improve from 0.11952
+Epoch 17/250
+ - 109s - loss: 0.1252 - val_loss: 0.1294
+
+Epoch 00017: val_loss did not improve from 0.11952
+Epoch 18/250
+ - 109s - loss: 0.1223 - val_loss: 0.1455
+
+Epoch 00018: val_loss did not improve from 0.11952
+Epoch 19/250
+ - 109s - loss: 0.1342 - val_loss: 0.1658
+
+Epoch 00019: val_loss did not improve from 0.11952
+Epoch 20/250
+ - 110s - loss: 0.2941 - val_loss: 0.2565
+
+Epoch 00020: val_loss did not improve from 0.11952
+Epoch 21/250
+ - 109s - loss: 0.2620 - val_loss: 0.2454
+
+Epoch 00021: val_loss did not improve from 0.11952
+Epoch 22/250
+ - 109s - loss: 0.2525 - val_loss: 0.2381
+
+Epoch 00022: val_loss did not improve from 0.11952
+Epoch 23/250
+ - 109s - loss: 0.2474 - val_loss: 0.2343
+
+Epoch 00023: val_loss did not improve from 0.11952
+Epoch 24/250
+ - 109s - loss: 0.2438 - val_loss: 0.2321
+
+Epoch 00024: val_loss did not improve from 0.11952
+Epoch 25/250
+ - 110s - loss: 0.2409 - val_loss: 0.2290
+
+Epoch 00025: val_loss did not improve from 0.11952
+Epoch 26/250
+ - 109s - loss: 0.2386 - val_loss: 0.2278
+
+Epoch 00026: val_loss did not improve from 0.11952
+Epoch 27/250
+ - 109s - loss: 0.2357 - val_loss: 0.2282
+
+Epoch 00027: val_loss did not improve from 0.11952
+Epoch 00027: early stopping
