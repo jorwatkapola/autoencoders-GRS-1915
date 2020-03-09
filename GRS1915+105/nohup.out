@@ -1,0 +1,42 @@
+[I 14:06:16.510 LabApp] JupyterLab extension loaded from /home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/jupyterlab
+[I 14:06:16.510 LabApp] JupyterLab application directory is /home/jkok1g14/anaconda3/envs/jakub-tf/share/jupyter/lab
+[I 14:06:16.513 LabApp] Serving notebooks from local directory: /data/jkok1g14/autoencoder
+[I 14:06:16.513 LabApp] The Jupyter Notebook is running at:
+[I 14:06:16.513 LabApp] http://localhost:9000/?token=351b967f67490e48f9fe6d5e4c85f6fe1ff6afc7fd80ddb2
+[I 14:06:16.513 LabApp]  or http://127.0.0.1:9000/?token=351b967f67490e48f9fe6d5e4c85f6fe1ff6afc7fd80ddb2
+[I 14:06:16.513 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:06:16.516 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/jkok1g14/.local/share/jupyter/runtime/nbserver-21054-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:9000/?token=351b967f67490e48f9fe6d5e4c85f6fe1ff6afc7fd80ddb2
+     or http://127.0.0.1:9000/?token=351b967f67490e48f9fe6d5e4c85f6fe1ff6afc7fd80ddb2
+[W 14:07:16.350 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:07:16.898 LabApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 14:07:17.746 LabApp] Kernel started: 66701bde-3a92-40da-81a5-d091c4fad24e
+[I 14:07:18.251 LabApp] Adapting from protocol version 5.1 (kernel 66701bde-3a92-40da-81a5-d091c4fad24e) to 5.3 (client).
+[I 14:07:18.258 LabApp] Adapting from protocol version 5.1 (kernel 66701bde-3a92-40da-81a5-d091c4fad24e) to 5.3 (client).
+[I 14:15:17.613 LabApp] Saving file at /jupyter/model_eval.ipynb
+[I 14:39:17.868 LabApp] Saving file at /jupyter/model_eval.ipynb
+[I 14:41:18.105 LabApp] Saving file at /jupyter/model_eval.ipynb
+[I 14:43:17.249 LabApp] Saving file at /gru_model_with_errors.py
+[I 14:44:14.100 LabApp] Saving file at /gru_model_with_errors.py
+[I 14:45:18.326 LabApp] Saving file at /jupyter/model_eval.ipynb
+[I 14:45:45.956 LabApp] Kernel restarted: 66701bde-3a92-40da-81a5-d091c4fad24e
+[I 15:54:12.774 LabApp] Creating new directory in /
+[W 15:54:59.766 LabApp] delete /lstm-ae-2.out
+[W 15:54:59.766 LabApp] Skipping trash for /data/jkok1g14/autoencoder/lstm-ae-2.out, on different device to home directory
+[W 15:54:59.767 LabApp] delete /lstm-ae-3.out
+[W 15:54:59.767 LabApp] Skipping trash for /data/jkok1g14/autoencoder/lstm-ae-3.out, on different device to home directory
+[W 15:54:59.769 LabApp] delete /lstm-ae.out
+[W 15:54:59.769 LabApp] Skipping trash for /data/jkok1g14/autoencoder/lstm-ae.out, on different device to home directory
+[W 15:54:59.773 LabApp] delete /reco.txt
+[W 15:54:59.773 LabApp] Skipping trash for /data/jkok1g14/autoencoder/reco.txt, on different device to home directory
+[I 15:57:40.580 LabApp] Saving file at /gru_model_with_errors.py
+[W 15:59:02.501 LabApp] delete /grs1915-lstm-autoencoder.py
+[W 15:59:02.501 LabApp] Skipping trash for /data/jkok1g14/autoencoder/grs1915-lstm-autoencoder.py, on different device to home directory
+[W 15:59:07.186 LabApp] delete /grs1915-lstm-autoencoder-CuDNN.py
+[W 15:59:07.186 LabApp] Skipping trash for /data/jkok1g14/autoencoder/grs1915-lstm-autoencoder-CuDNN.py, on different device to home directory

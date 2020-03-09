@@ -1,0 +1,96 @@
+2020-02-05 15:05:11.837949: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2020-02-05 15:05:11.976297: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-02-05 15:05:11.977411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 11.91GiB freeMemory: 11.73GiB
+2020-02-05 15:05:11.977429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-02-05 15:05:12.215980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-02-05 15:05:12.216023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-02-05 15:05:12.216031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-02-05 15:05:12.216279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11346 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2020-02-05 15:05:13.320868: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x55f7b2d7bcd0
+Epoch 1/8000
+
+Epoch 00001: val_loss improved from inf to 20.21630, saving model to ../model_weights/model_2020-02-05_15-05-11.h5
+ - 896s - loss: 29.5538 - val_loss: 20.2163
+Epoch 2/8000
+
+Epoch 00002: val_loss did not improve from 20.21630
+ - 873s - loss: 92.8471 - val_loss: 53.6881
+Epoch 3/8000
+
+Epoch 00003: val_loss did not improve from 20.21630
+ - 870s - loss: 65.6582 - val_loss: 57.6258
+Epoch 4/8000
+
+Epoch 00004: val_loss did not improve from 20.21630
+ - 861s - loss: 62.5685 - val_loss: 63.7939
+Epoch 5/8000
+
+Epoch 00005: val_loss did not improve from 20.21630
+ - 860s - loss: 59.2569 - val_loss: 85.9413
+Epoch 6/8000
+
+Epoch 00006: val_loss did not improve from 20.21630
+ - 863s - loss: 53.0507 - val_loss: 55.8059
+Epoch 7/8000
+
+Epoch 00007: val_loss did not improve from 20.21630
+ - 860s - loss: 57.7812 - val_loss: 44.5404
+Epoch 8/8000
+
+Epoch 00008: val_loss did not improve from 20.21630
+ - 852s - loss: 57.8190 - val_loss: 60.6117
+Epoch 9/8000
+
+Epoch 00009: val_loss did not improve from 20.21630
+ - 853s - loss: 56.5828 - val_loss: 70.2570
+Epoch 10/8000
+
+Epoch 00010: val_loss did not improve from 20.21630
+ - 851s - loss: 59.9572 - val_loss: 49.8951
+Epoch 11/8000
+
+Epoch 00011: val_loss did not improve from 20.21630
+ - 851s - loss: 57.3449 - val_loss: 44.8092
+Epoch 12/8000
+
+Epoch 00012: val_loss did not improve from 20.21630
+ - 852s - loss: 55.4333 - val_loss: 64.1993
+Epoch 13/8000
+
+Epoch 00013: val_loss did not improve from 20.21630
+ - 852s - loss: 57.3198 - val_loss: 70.1012
+Epoch 14/8000
+
+Epoch 00014: val_loss did not improve from 20.21630
+ - 851s - loss: 51.4069 - val_loss: 49.8363
+Epoch 15/8000
+
+Epoch 00015: val_loss did not improve from 20.21630
+ - 850s - loss: 46.1083 - val_loss: 50.2092
+Epoch 16/8000
+
+Epoch 00016: val_loss did not improve from 20.21630
+ - 850s - loss: 46.2671 - val_loss: 50.1365
+Epoch 17/8000
+
+Epoch 00017: val_loss did not improve from 20.21630
+ - 849s - loss: 45.6476 - val_loss: 51.4823
+Epoch 18/8000
+
+Epoch 00018: val_loss did not improve from 20.21630
+ - 844s - loss: 46.2455 - val_loss: 50.6326
+Epoch 19/8000
+
+Epoch 00019: val_loss did not improve from 20.21630
+ - 842s - loss: 45.5690 - val_loss: 47.5050
+Epoch 20/8000
+
+Epoch 00020: val_loss did not improve from 20.21630
+ - 841s - loss: 45.3142 - val_loss: 49.3701
+Epoch 21/8000
+
+Epoch 00021: val_loss did not improve from 20.21630
+ - 843s - loss: 45.4154 - val_loss: 48.6545
