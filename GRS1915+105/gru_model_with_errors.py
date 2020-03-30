@@ -5,7 +5,7 @@ from tensorflow.keras.layers import RepeatVector
 from tensorflow.keras.layers import TimeDistributed
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.callbacks import ModelCheckpoint
-from tensorflow.keras.optimizers import Adamax
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Flatten
 from tensorflow.keras.backend import mean
 from tensorflow.keras.backend import square
@@ -24,9 +24,9 @@ import pytz
 
 np.random.seed(seed=11)
 
-with open('../data/95921_len512_s40_counts.pkl', 'rb') as f:
+with open('../../data_GRS1915/80258_len256_stride8_4sec_counts.pkl', 'rb') as f:
     segments = pickle.load(f)
-with open('../data/95921_len512_s40_errors.pkl', 'rb') as f:
+with open('../../data_GRS1915/80258_len256_stride8_4sec_errors.pkl', 'rb') as f:
     errors = pickle.load(f)
     
 errors = ((errors)/np.std(segments)).astype(np.float32)
@@ -73,33 +73,33 @@ class DataGenerator(Sequence):
 
 
 # Training and Validation generators in a 95/5 split
-training_generator = DataGenerator(segments[:int(np.floor(len(segments)*0.95))], errors[:int(np.floor(len(errors)*0.95))], batch_size=256)
-validation_generator = DataGenerator(segments[int(np.floor(len(segments)*0.95)):], errors[int(np.floor(len(errors)*0.95)):], batch_size=256)
+training_generator = DataGenerator(segments[:int(np.floor(len(segments)*0.95))], errors[:int(np.floor(len(errors)*0.95))], batch_size=2048)
+validation_generator = DataGenerator(segments[int(np.floor(len(segments)*0.95)):], errors[int(np.floor(len(errors)*0.95)):], batch_size=2048)
 
 
-y_in = Input(shape=(512,1))
-y_err = Input(shape=(512,1))
+y_in = Input(shape=(256,1))
+y_err = Input(shape=(256,1))
 # h_enc = Conv1D(32, 2, activation='relu')(y_in)
 # h_enc = Conv1D(32, 8, activation='relu')(h_enc)
 # h_enc = CuDNNGRU(512, return_sequences=True)(y_in)
 # h_enc = CuDNNGRU(256, return_sequences=True)(y_in)
-h_enc = CuDNNLSTM(1024, return_sequences=False)(y_in)
+h_enc = CuDNNLSTM(256, return_sequences=False)(y_in)
+# h_enc = Dense(256)(h_enc)
+h_enc = Dense(8, activation=None, name='bottleneck')(h_enc)
 # h_enc = BatchNormalization()(h_enc)
-h_enc = Dense(16, activation=None, name='bottleneck')(h_enc)
-# h_enc = BatchNormalization()(h_enc)
-h_dec = RepeatVector(512)(h_enc)
-h_dec = CuDNNLSTM(1024, return_sequences=True)(h_dec)
+h_dec = RepeatVector(256)(h_enc)
+h_dec = CuDNNLSTM(256, return_sequences=True)(h_dec)
 # h_dec = CuDNNGRU(256, return_sequences=True)(h_dec)
 h_dec = TimeDistributed(Dense(1))(h_dec)
 model = Model(inputs=[y_in, y_err], outputs=h_dec)
-model.compile(optimizer=Adamax(clipvalue=0.5), loss=chi2(y_err))
+model.compile(optimizer=Adam(clipvalue=0.5), loss=chi2(y_err))
 
-model.load_weights("../model_weights/model_2020-02-09_10-36-06.h5")
+# model.load_weights("../../model_weights/model_2020-03-11_20-34-12.h5")
 
 training_time_stamp = datetime.datetime.now(tz=pytz.timezone('Europe/London')).strftime("%Y-%m-%d_%H-%M-%S")
 
 CB = EarlyStopping(monitor='val_loss', min_delta=5e-5, patience=100, verbose=1, mode='auto')
-MC = ModelCheckpoint('../model_weights/model_{}.h5'.format(training_time_stamp), monitor='val_loss', mode="auto", save_best_only=True, verbose=1)
+MC = ModelCheckpoint('../../model_weights/model_{}.h5'.format(training_time_stamp), monitor='val_loss', mode="auto", save_best_only=True, verbose=1)
 history = model.fit_generator(training_generator, epochs=8000, verbose=2, callbacks = [MC, CB], validation_data=validation_generator)
 
 
