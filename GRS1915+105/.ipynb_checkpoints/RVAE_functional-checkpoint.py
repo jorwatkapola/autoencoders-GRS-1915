@@ -29,13 +29,20 @@ import pytz
 
 np.random.seed(seed=11)
 
-with open('../../data_GRS1915/80258_len256_stride8_4sec_counts.pkl', 'rb') as f:
+with open('../../data_GRS1915/468202_len128_s2_4cad_counts_errorfix.pkl', 'rb') as f:
     segments = pickle.load(f)
-with open('../../data_GRS1915/80258_len256_stride8_4sec_errors.pkl', 'rb') as f:
+with open('../../data_GRS1915/468202_len128_s2_4cad_errors_errorfix.pkl', 'rb') as f:
     errors = pickle.load(f)
-    
-errors = ((errors)/np.std(segments)).astype(np.float32)
-segments = zscore(segments, axis=None).astype(np.float32)  # standardize
+
+# errors = np.expand_dims((np.squeeze(errors)/(np.max(segments, axis=1)-np.min(segments, axis=1))), axis=-1).astype(np.float32)
+# segments = np.expand_dims(((np.squeeze(segments)-np.min(segments, axis=1))/(np.max(segments, axis=1)-np.min(segments, axis=1))), axis=-1).astype(np.float32)
+# errors = ((errors)/np.std(segments)).astype(np.float32)
+# segments = zscore(segments, axis=None).astype(np.float32)  # standardize
+
+
+errors = ((errors)/np.expand_dims(np.std(segments, axis=1), axis=1)).astype(np.float32)
+segments = zscore(segments, axis=1).astype(np.float32)  # standardize per segment
+
 
 def chi2(y_err):
     def MSE_scaled(y_in, y_out,):
@@ -88,13 +95,13 @@ class Sampling(layers.Layer):
         return z_mean + tf.exp(0.5 * z_log_var) * epsilon
 
 
-original_dim = 256
-intermediate_dim = 768
-latent_dim = 8
+original_dim = 128
+intermediate_dim = 512
+latent_dim = 16
 
 # Define encoder model.
 original_inputs = tf.keras.Input(shape=(original_dim,1), name='encoder_input')
-input_err = Input(shape=(256,1))
+input_err = Input(shape=(original_dim,1))
 x = layers.CuDNNLSTM(intermediate_dim, return_sequences=False)(original_inputs)
 z_mean = layers.Dense(latent_dim, name='z_mean')(x)
 z_log_var = layers.Dense(latent_dim, name='z_log_var')(x)
@@ -117,17 +124,17 @@ kl_loss = - 0.5 * tf.reduce_mean(
     z_log_var - tf.square(z_mean) - tf.exp(z_log_var) + 1)
 vae.add_loss(kl_loss)
 
-optimizer = tf.keras.optimizers.Adam(clipvalue=0.5)
+optimizer = tf.keras.optimizers.SGD(lr=2e-5, clipvalue=0.5) #Adam(clipvalue=0.5)
 
 vae.compile(optimizer, loss=chi2(input_err))
 
-# vae.load_weights("../../model_weights/model_2020-03-19_07-34-48.h5")
+vae.load_weights("../../model_weights/model_2020-04-28_22-11-18.h5")
 
 
     
 # Training and Validation generators in a 95/5 split
-training_generator = DataGenerator(segments[:int(np.floor(len(segments)*0.95))], errors[:int(np.floor(len(errors)*0.95))], batch_size=768)
-validation_generator = DataGenerator(segments[int(np.floor(len(segments)*0.95)):], errors[int(np.floor(len(errors)*0.95)):], batch_size=768)    
+training_generator = DataGenerator(segments[:int(np.floor(len(segments)*0.95))], errors[:int(np.floor(len(errors)*0.95))], batch_size=2048)
+validation_generator = DataGenerator(segments[int(np.floor(len(segments)*0.95)):], errors[int(np.floor(len(errors)*0.95)):], batch_size=2048)    
 
 
 training_time_stamp = datetime.datetime.now(tz=pytz.timezone('Europe/London')).strftime("%Y-%m-%d_%H-%M-%S")
