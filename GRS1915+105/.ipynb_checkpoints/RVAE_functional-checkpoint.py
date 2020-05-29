@@ -36,12 +36,12 @@ with open('../../data_GRS1915/468202_len128_s2_4cad_errors_errorfix.pkl', 'rb') 
 
 # errors = np.expand_dims((np.squeeze(errors)/(np.max(segments, axis=1)-np.min(segments, axis=1))), axis=-1).astype(np.float32)
 # segments = np.expand_dims(((np.squeeze(segments)-np.min(segments, axis=1))/(np.max(segments, axis=1)-np.min(segments, axis=1))), axis=-1).astype(np.float32)
-# errors = ((errors)/np.std(segments)).astype(np.float32)
-# segments = zscore(segments, axis=None).astype(np.float32)  # standardize
+errors = ((errors)/np.std(segments)).astype(np.float32)
+segments = zscore(segments, axis=None).astype(np.float32)  # standardize
 
 
-errors = ((errors)/np.expand_dims(np.std(segments, axis=1), axis=1)).astype(np.float32)
-segments = zscore(segments, axis=1).astype(np.float32)  # standardize per segment
+# errors = ((errors)/np.expand_dims(np.std(segments, axis=1), axis=1)).astype(np.float32)
+# segments = zscore(segments, axis=1).astype(np.float32)  # standardize per segment
 
 
 def chi2(y_err):
@@ -124,11 +124,11 @@ kl_loss = - 0.5 * tf.reduce_mean(
     z_log_var - tf.square(z_mean) - tf.exp(z_log_var) + 1)
 vae.add_loss(kl_loss)
 
-optimizer = tf.keras.optimizers.SGD(lr=2e-5, clipvalue=0.5) #Adam(clipvalue=0.5)
+optimizer = tf.keras.optimizers.Adam(clipvalue=0.5)
 
 vae.compile(optimizer, loss=chi2(input_err))
 
-vae.load_weights("../../model_weights/model_2020-04-28_22-11-18.h5")
+# vae.load_weights("../../model_weights/model_2020-04-29_09-12-23.h5")
 
 
     

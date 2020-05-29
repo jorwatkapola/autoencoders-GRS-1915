@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "RVAE_histograms.py", line 196, in <module>
+    vae.compile(optimizer, loss=emd_loss)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/training/checkpointable/base.py", line 364, in _method_wrapper
+    method(self, *args, **kwargs)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/keras/engine/training.py", line 452, in compile
+    output_loss = weighted_loss(y_true, y_pred, sample_weight, mask)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/keras/engine/training_utils.py", line 437, in weighted
+    score_array = fn(y_true, y_pred)
+  File "RVAE_histograms.py", line 100, in emd_loss
+    ecdf_p = ecdf(p)
+  File "RVAE_histograms.py", line 78, in ecdf
+    indices = tril_indices(n)
+  File "RVAE_histograms.py", line 56, in tril_indices
+    m1 = tf.tile(tf.expand_dims(tf.range(n), axis=0), [n, 1])
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/ops/math_ops.py", line 1196, in range
+    limit = ops.convert_to_tensor(limit, dtype=dtype, name="limit")
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 998, in convert_to_tensor
+    as_ref=False)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 1094, in internal_convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/framework/constant_op.py", line 217, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/framework/constant_op.py", line 196, in constant
+    value, dtype=dtype, shape=shape, verify_shape=verify_shape))
+  File "/home/jkok1g14/anaconda3/envs/jakub-tf/lib/python3.5/site-packages/tensorflow/python/framework/tensor_util.py", line 424, in make_tensor_proto
+    raise ValueError("None values not supported.")
+ValueError: None values not supported.

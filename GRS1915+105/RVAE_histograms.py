@@ -24,6 +24,14 @@ import pickle
 from scipy.stats import zscore
 import datetime
 import pytz
+# from nima import emd_loss
+
+from tensorflow.keras.backend import flatten
+from tensorflow.keras.backend import concatenate
+from tensorflow.keras.backend import reverse
+from tensorflow import cumsum
+
+
 
 
 
@@ -33,6 +41,69 @@ with open('../../data_GRS1915/468202_len128_s2_4cad_histograms_24bin_0-13k_error
     segments = pickle.load(f)
 
 segments = zscore(segments, axis=None).astype(np.float32)  # standardize
+
+def tril_indices(n, k=0):
+    """Return the indices for the lower-triangle of an (n, m) array.
+    Works similarly to `np.tril_indices`
+    Args:
+      n: the row dimension of the arrays for which the returned indices will
+        be valid.
+      k: optional diagonal offset (see `np.tril` for details).
+    Returns:
+      inds: The indices for the triangle. The returned tuple contains two arrays,
+        each with the indices along one dimension of the array.
+    """
+    m1 = tf.tile(tf.expand_dims(tf.range(n), axis=0), [n, 1])
+    m2 = tf.tile(tf.expand_dims(tf.range(n), axis=1), [1, n])
+    mask = (m1 - m2) >= -k
+    ix1 = tf.boolean_mask(m2, tf.transpose(mask))
+    ix2 = tf.boolean_mask(m1, tf.transpose(mask))
+    return ix1, ix2
+
+def ecdf(p):
+    """Estimate the cumulative distribution function.
+    The e.c.d.f. (empirical cumulative distribution function) F_n is a step
+    function with jump 1/n at each observation (possibly with multiple jumps
+    at one place if there are ties).
+    For observations x= (x_1, x_2, ... x_n), F_n is the fraction of
+    observations less or equal to t, i.e.,
+    F_n(t) = #{x_i <= t} / n = 1/n \sum^{N}_{i=1} Indicator(x_i <= t).
+    Args:
+      p: a 2-D `Tensor` of observations of shape [batch_size, num_classes].
+        Classes are assumed to be ordered.
+    Returns:
+      A 2-D `Tensor` of estimated ECDFs.
+    """
+    n = p.get_shape().as_list()[1]
+    indices = tril_indices(n)
+    indices = tf.transpose(tf.stack([indices[1], indices[0]]))
+    ones = tf.ones([n * (n + 1) / 2])
+    triang = tf.scatter_nd(indices, ones, [n, n])
+    return tf.matmul(p, triang)
+
+def emd_loss(p, p_hat, r=2, scope=None):
+    """Compute the Earth Mover's Distance loss.
+    Hou, Le, Chen-Ping Yu, and Dimitris Samaras. "Squared Earth Mover's
+    Distance-based Loss for Training Deep Neural Networks." arXiv preprint
+    arXiv:1611.05916 (2016).
+    Args:
+      p: a 2-D `Tensor` of the ground truth probability mass functions.
+      p_hat: a 2-D `Tensor` of the estimated p.m.f.-s
+      r: a constant for the r-norm.
+      scope: optional name scope.
+    `p` and `p_hat` are assumed to have equal mass as \sum^{N}_{i=1} p_i =
+    \sum^{N}_{i=1} p_hat_i
+    Returns:
+      A 0-D `Tensor` of r-normed EMD loss.
+    """
+    with tf.name_scope(scope, 'EmdLoss', [p, p_hat]):
+        ecdf_p = ecdf(p)
+        ecdf_p_hat = ecdf(p_hat)
+        emd = tf.reduce_mean(tf.pow(tf.abs(ecdf_p - ecdf_p_hat), r), axis=-1)
+        emd = tf.pow(emd, 1 / r)
+        return tf.reduce_mean(emd)
+    
+
 
 
 # def chi2(y_err):
@@ -115,9 +186,14 @@ kl_loss = - 0.5 * tf.reduce_mean(
     z_log_var - tf.square(z_mean) - tf.exp(z_log_var) + 1)
 vae.add_loss(kl_loss)
 
+MSE_loss = tf.keras.losses.MSE(original_inputs, outputs)
+vae.add_loss(MSE_loss)
+
+
+
 optimizer = tf.keras.optimizers.Adam(clipvalue=0.5) #Adam(clipvalue=0.5)
 
-vae.compile(optimizer, loss='mean_squared_error')
+vae.compile(optimizer, loss=emd_loss)
 
 # vae.load_weights("../../model_weights/model_2020-04-24_13-14-37.h5")
 
