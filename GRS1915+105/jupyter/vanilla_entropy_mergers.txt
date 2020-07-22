@@ -1,114 +1,114 @@
-merger 0 	number of clusters:  114 	 sizes of clusters, number of each size of cluster (array([1]), array([114]))
-merger 1 	number of clusters:  113 	 sizes of clusters, number of each size of cluster (array([1, 2]), array([112,   1]))
-merger 2 	number of clusters:  112 	 sizes of clusters, number of each size of cluster (array([1, 3]), array([111,   1]))
-merger 3 	number of clusters:  111 	 sizes of clusters, number of each size of cluster (array([1, 4]), array([110,   1]))
-merger 4 	number of clusters:  110 	 sizes of clusters, number of each size of cluster (array([1, 5]), array([109,   1]))
-merger 5 	number of clusters:  109 	 sizes of clusters, number of each size of cluster (array([1, 6]), array([108,   1]))
-merger 6 	number of clusters:  108 	 sizes of clusters, number of each size of cluster (array([1, 7]), array([107,   1]))
-merger 7 	number of clusters:  107 	 sizes of clusters, number of each size of cluster (array([1, 8]), array([106,   1]))
-merger 8 	number of clusters:  106 	 sizes of clusters, number of each size of cluster (array([1, 9]), array([105,   1]))
-merger 9 	number of clusters:  105 	 sizes of clusters, number of each size of cluster (array([ 1, 10]), array([104,   1]))
-merger 10 	number of clusters:  104 	 sizes of clusters, number of each size of cluster (array([ 1, 11]), array([103,   1]))
-merger 11 	number of clusters:  103 	 sizes of clusters, number of each size of cluster (array([ 1, 12]), array([102,   1]))
-merger 12 	number of clusters:  102 	 sizes of clusters, number of each size of cluster (array([ 1, 13]), array([101,   1]))
-merger 13 	number of clusters:  101 	 sizes of clusters, number of each size of cluster (array([ 1, 14]), array([100,   1]))
-merger 14 	number of clusters:  100 	 sizes of clusters, number of each size of cluster (array([ 1, 15]), array([99,  1]))
-merger 15 	number of clusters:  99 	 sizes of clusters, number of each size of cluster (array([ 1, 16]), array([98,  1]))
-merger 16 	number of clusters:  98 	 sizes of clusters, number of each size of cluster (array([ 1, 17]), array([97,  1]))
-merger 17 	number of clusters:  97 	 sizes of clusters, number of each size of cluster (array([ 1, 18]), array([96,  1]))
-merger 18 	number of clusters:  96 	 sizes of clusters, number of each size of cluster (array([ 1, 19]), array([95,  1]))
-merger 19 	number of clusters:  95 	 sizes of clusters, number of each size of cluster (array([ 1, 20]), array([94,  1]))
-merger 20 	number of clusters:  94 	 sizes of clusters, number of each size of cluster (array([ 1, 21]), array([93,  1]))
-merger 21 	number of clusters:  93 	 sizes of clusters, number of each size of cluster (array([ 1, 22]), array([92,  1]))
-merger 22 	number of clusters:  92 	 sizes of clusters, number of each size of cluster (array([ 1, 23]), array([91,  1]))
-merger 23 	number of clusters:  91 	 sizes of clusters, number of each size of cluster (array([ 1, 24]), array([90,  1]))
-merger 24 	number of clusters:  90 	 sizes of clusters, number of each size of cluster (array([ 1, 25]), array([89,  1]))
-merger 25 	number of clusters:  89 	 sizes of clusters, number of each size of cluster (array([ 1, 26]), array([88,  1]))
-merger 26 	number of clusters:  88 	 sizes of clusters, number of each size of cluster (array([ 1, 27]), array([87,  1]))
-merger 27 	number of clusters:  87 	 sizes of clusters, number of each size of cluster (array([ 1, 28]), array([86,  1]))
-merger 28 	number of clusters:  86 	 sizes of clusters, number of each size of cluster (array([ 1, 29]), array([85,  1]))
-merger 29 	number of clusters:  85 	 sizes of clusters, number of each size of cluster (array([ 1, 30]), array([84,  1]))
-merger 30 	number of clusters:  84 	 sizes of clusters, number of each size of cluster (array([ 1, 31]), array([83,  1]))
-merger 31 	number of clusters:  83 	 sizes of clusters, number of each size of cluster (array([ 1, 32]), array([82,  1]))
-merger 32 	number of clusters:  82 	 sizes of clusters, number of each size of cluster (array([ 1, 33]), array([81,  1]))
-merger 33 	number of clusters:  81 	 sizes of clusters, number of each size of cluster (array([ 1, 34]), array([80,  1]))
-merger 34 	number of clusters:  80 	 sizes of clusters, number of each size of cluster (array([ 1, 35]), array([79,  1]))
-merger 35 	number of clusters:  79 	 sizes of clusters, number of each size of cluster (array([ 1, 36]), array([78,  1]))
-merger 36 	number of clusters:  78 	 sizes of clusters, number of each size of cluster (array([ 1, 37]), array([77,  1]))
-merger 37 	number of clusters:  77 	 sizes of clusters, number of each size of cluster (array([ 1, 38]), array([76,  1]))
-merger 38 	number of clusters:  76 	 sizes of clusters, number of each size of cluster (array([ 1, 39]), array([75,  1]))
-merger 39 	number of clusters:  75 	 sizes of clusters, number of each size of cluster (array([ 1, 40]), array([74,  1]))
-merger 40 	number of clusters:  74 	 sizes of clusters, number of each size of cluster (array([ 1, 41]), array([73,  1]))
-merger 41 	number of clusters:  73 	 sizes of clusters, number of each size of cluster (array([ 1, 42]), array([72,  1]))
-merger 42 	number of clusters:  72 	 sizes of clusters, number of each size of cluster (array([ 1, 43]), array([71,  1]))
-merger 43 	number of clusters:  71 	 sizes of clusters, number of each size of cluster (array([ 1, 44]), array([70,  1]))
-merger 44 	number of clusters:  70 	 sizes of clusters, number of each size of cluster (array([ 1, 45]), array([69,  1]))
-merger 45 	number of clusters:  69 	 sizes of clusters, number of each size of cluster (array([ 1, 46]), array([68,  1]))
-merger 46 	number of clusters:  68 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 46]), array([66,  1,  1]))
-merger 47 	number of clusters:  67 	 sizes of clusters, number of each size of cluster (array([ 1, 48]), array([66,  1]))
-merger 48 	number of clusters:  66 	 sizes of clusters, number of each size of cluster (array([ 1, 49]), array([65,  1]))
-merger 49 	number of clusters:  65 	 sizes of clusters, number of each size of cluster (array([ 1, 50]), array([64,  1]))
-merger 50 	number of clusters:  64 	 sizes of clusters, number of each size of cluster (array([ 1, 51]), array([63,  1]))
-merger 51 	number of clusters:  63 	 sizes of clusters, number of each size of cluster (array([ 1, 52]), array([62,  1]))
-merger 52 	number of clusters:  62 	 sizes of clusters, number of each size of cluster (array([ 1, 53]), array([61,  1]))
-merger 53 	number of clusters:  61 	 sizes of clusters, number of each size of cluster (array([ 1, 54]), array([60,  1]))
-merger 54 	number of clusters:  60 	 sizes of clusters, number of each size of cluster (array([ 1, 55]), array([59,  1]))
-merger 55 	number of clusters:  59 	 sizes of clusters, number of each size of cluster (array([ 1, 56]), array([58,  1]))
-merger 56 	number of clusters:  58 	 sizes of clusters, number of each size of cluster (array([ 1, 57]), array([57,  1]))
-merger 57 	number of clusters:  57 	 sizes of clusters, number of each size of cluster (array([ 1, 58]), array([56,  1]))
-merger 58 	number of clusters:  56 	 sizes of clusters, number of each size of cluster (array([ 1, 59]), array([55,  1]))
-merger 59 	number of clusters:  55 	 sizes of clusters, number of each size of cluster (array([ 1, 60]), array([54,  1]))
-merger 60 	number of clusters:  54 	 sizes of clusters, number of each size of cluster (array([ 1, 61]), array([53,  1]))
-merger 61 	number of clusters:  53 	 sizes of clusters, number of each size of cluster (array([ 1, 62]), array([52,  1]))
-merger 62 	number of clusters:  52 	 sizes of clusters, number of each size of cluster (array([ 1, 63]), array([51,  1]))
-merger 63 	number of clusters:  51 	 sizes of clusters, number of each size of cluster (array([ 1, 64]), array([50,  1]))
-merger 64 	number of clusters:  50 	 sizes of clusters, number of each size of cluster (array([ 1, 65]), array([49,  1]))
-merger 65 	number of clusters:  49 	 sizes of clusters, number of each size of cluster (array([ 1, 66]), array([48,  1]))
-merger 66 	number of clusters:  48 	 sizes of clusters, number of each size of cluster (array([ 1, 67]), array([47,  1]))
-merger 67 	number of clusters:  47 	 sizes of clusters, number of each size of cluster (array([ 1, 68]), array([46,  1]))
-merger 68 	number of clusters:  46 	 sizes of clusters, number of each size of cluster (array([ 1, 69]), array([45,  1]))
-merger 69 	number of clusters:  45 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 69]), array([43,  1,  1]))
-merger 70 	number of clusters:  44 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 70]), array([42,  1,  1]))
-merger 71 	number of clusters:  43 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 71]), array([41,  1,  1]))
-merger 72 	number of clusters:  42 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 72]), array([40,  1,  1]))
-merger 73 	number of clusters:  41 	 sizes of clusters, number of each size of cluster (array([ 1, 74]), array([40,  1]))
-merger 74 	number of clusters:  40 	 sizes of clusters, number of each size of cluster (array([ 1, 75]), array([39,  1]))
-merger 75 	number of clusters:  39 	 sizes of clusters, number of each size of cluster (array([ 1, 76]), array([38,  1]))
-merger 76 	number of clusters:  38 	 sizes of clusters, number of each size of cluster (array([ 1, 77]), array([37,  1]))
-merger 77 	number of clusters:  37 	 sizes of clusters, number of each size of cluster (array([ 1, 78]), array([36,  1]))
-merger 78 	number of clusters:  36 	 sizes of clusters, number of each size of cluster (array([ 1, 79]), array([35,  1]))
-merger 79 	number of clusters:  35 	 sizes of clusters, number of each size of cluster (array([ 1, 80]), array([34,  1]))
-merger 80 	number of clusters:  34 	 sizes of clusters, number of each size of cluster (array([ 1, 81]), array([33,  1]))
-merger 81 	number of clusters:  33 	 sizes of clusters, number of each size of cluster (array([ 1, 82]), array([32,  1]))
-merger 82 	number of clusters:  32 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 82]), array([30,  1,  1]))
-merger 83 	number of clusters:  31 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 83]), array([29,  1,  1]))
-merger 84 	number of clusters:  30 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 83]), array([27,  2,  1]))
-merger 85 	number of clusters:  29 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  3, 83]), array([26,  1,  1,  1]))
-merger 86 	number of clusters:  28 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  4, 83]), array([25,  1,  1,  1]))
-merger 87 	number of clusters:  27 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([25,  1,  1]))
-merger 88 	number of clusters:  26 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([23,  2,  1]))
-merger 89 	number of clusters:  25 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([21,  3,  1]))
-merger 90 	number of clusters:  24 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 89]), array([21,  2,  1]))
-merger 91 	number of clusters:  23 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 91]), array([21,  1,  1]))
-merger 92 	number of clusters:  22 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 92]), array([20,  1,  1]))
-merger 93 	number of clusters:  21 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 93]), array([19,  1,  1]))
-merger 94 	number of clusters:  20 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 94]), array([18,  1,  1]))
-merger 95 	number of clusters:  19 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 95]), array([17,  1,  1]))
-merger 96 	number of clusters:  18 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 96]), array([16,  1,  1]))
-merger 97 	number of clusters:  17 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 97]), array([15,  1,  1]))
-merger 98 	number of clusters:  16 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 98]), array([14,  1,  1]))
-merger 99 	number of clusters:  15 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 98]), array([12,  2,  1]))
-merger 100 	number of clusters:  14 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  3, 98]), array([11,  1,  1,  1]))
-merger 101 	number of clusters:  13 	 sizes of clusters, number of each size of cluster (array([  1,   2, 101]), array([11,  1,  1]))
-merger 102 	number of clusters:  12 	 sizes of clusters, number of each size of cluster (array([  1,   2, 101]), array([9, 2, 1]))
-merger 103 	number of clusters:  11 	 sizes of clusters, number of each size of cluster (array([  1,   2,   3, 101]), array([8, 1, 1, 1]))
-merger 104 	number of clusters:  10 	 sizes of clusters, number of each size of cluster (array([  1,   2, 104]), array([8, 1, 1]))
-merger 105 	number of clusters:  9 	 sizes of clusters, number of each size of cluster (array([  1, 106]), array([8, 1]))
-merger 106 	number of clusters:  8 	 sizes of clusters, number of each size of cluster (array([  1, 107]), array([7, 1]))
-merger 107 	number of clusters:  7 	 sizes of clusters, number of each size of cluster (array([  1, 108]), array([6, 1]))
-merger 108 	number of clusters:  6 	 sizes of clusters, number of each size of cluster (array([  1, 109]), array([5, 1]))
-merger 109 	number of clusters:  5 	 sizes of clusters, number of each size of cluster (array([  1, 110]), array([4, 1]))
-merger 110 	number of clusters:  4 	 sizes of clusters, number of each size of cluster (array([  1, 111]), array([3, 1]))
-merger 111 	number of clusters:  3 	 sizes of clusters, number of each size of cluster (array([  1, 112]), array([2, 1]))
-merger 112 	number of clusters:  2 	 sizes of clusters, number of each size of cluster (array([  1, 113]), array([1, 1]))
-merger 113 	number of clusters:  1 	 sizes of clusters, number of each size of cluster (array([114]), array([1]))
+merger 0 	number of clusters:  114 	 sizes of clusters, number of each size of cluster (array([1]), array([114])) 	max cluster size:  20781.0
+merger 1 	number of clusters:  113 	 sizes of clusters, number of each size of cluster (array([1, 2]), array([112,   1])) 	max cluster size:  34072.0
+merger 2 	number of clusters:  112 	 sizes of clusters, number of each size of cluster (array([1, 3]), array([111,   1])) 	max cluster size:  45708.0
+merger 3 	number of clusters:  111 	 sizes of clusters, number of each size of cluster (array([1, 4]), array([110,   1])) 	max cluster size:  54367.0
+merger 4 	number of clusters:  110 	 sizes of clusters, number of each size of cluster (array([1, 5]), array([109,   1])) 	max cluster size:  60742.0
+merger 5 	number of clusters:  109 	 sizes of clusters, number of each size of cluster (array([1, 6]), array([108,   1])) 	max cluster size:  70981.0
+merger 6 	number of clusters:  108 	 sizes of clusters, number of each size of cluster (array([1, 7]), array([107,   1])) 	max cluster size:  78176.0
+merger 7 	number of clusters:  107 	 sizes of clusters, number of each size of cluster (array([1, 8]), array([106,   1])) 	max cluster size:  95676.0
+merger 8 	number of clusters:  106 	 sizes of clusters, number of each size of cluster (array([1, 9]), array([105,   1])) 	max cluster size:  104571.0
+merger 9 	number of clusters:  105 	 sizes of clusters, number of each size of cluster (array([ 1, 10]), array([104,   1])) 	max cluster size:  109748.0
+merger 10 	number of clusters:  104 	 sizes of clusters, number of each size of cluster (array([ 1, 11]), array([103,   1])) 	max cluster size:  115851.0
+merger 11 	number of clusters:  103 	 sizes of clusters, number of each size of cluster (array([ 1, 12]), array([102,   1])) 	max cluster size:  122427.0
+merger 12 	number of clusters:  102 	 sizes of clusters, number of each size of cluster (array([ 1, 13]), array([101,   1])) 	max cluster size:  128792.0
+merger 13 	number of clusters:  101 	 sizes of clusters, number of each size of cluster (array([ 1, 14]), array([100,   1])) 	max cluster size:  133909.0
+merger 14 	number of clusters:  100 	 sizes of clusters, number of each size of cluster (array([ 1, 15]), array([99,  1])) 	max cluster size:  148691.0
+merger 15 	number of clusters:  99 	 sizes of clusters, number of each size of cluster (array([ 1, 16]), array([98,  1])) 	max cluster size:  155031.0
+merger 16 	number of clusters:  98 	 sizes of clusters, number of each size of cluster (array([ 1, 17]), array([97,  1])) 	max cluster size:  162389.0
+merger 17 	number of clusters:  97 	 sizes of clusters, number of each size of cluster (array([ 1, 18]), array([96,  1])) 	max cluster size:  168041.0
+merger 18 	number of clusters:  96 	 sizes of clusters, number of each size of cluster (array([ 1, 19]), array([95,  1])) 	max cluster size:  173619.0
+merger 19 	number of clusters:  95 	 sizes of clusters, number of each size of cluster (array([ 1, 20]), array([94,  1])) 	max cluster size:  178635.0
+merger 20 	number of clusters:  94 	 sizes of clusters, number of each size of cluster (array([ 1, 21]), array([93,  1])) 	max cluster size:  187669.0
+merger 21 	number of clusters:  93 	 sizes of clusters, number of each size of cluster (array([ 1, 22]), array([92,  1])) 	max cluster size:  195286.0
+merger 22 	number of clusters:  92 	 sizes of clusters, number of each size of cluster (array([ 1, 23]), array([91,  1])) 	max cluster size:  199334.0
+merger 23 	number of clusters:  91 	 sizes of clusters, number of each size of cluster (array([ 1, 24]), array([90,  1])) 	max cluster size:  203180.0
+merger 24 	number of clusters:  90 	 sizes of clusters, number of each size of cluster (array([ 1, 25]), array([89,  1])) 	max cluster size:  206525.0
+merger 25 	number of clusters:  89 	 sizes of clusters, number of each size of cluster (array([ 1, 26]), array([88,  1])) 	max cluster size:  214442.0
+merger 26 	number of clusters:  88 	 sizes of clusters, number of each size of cluster (array([ 1, 27]), array([87,  1])) 	max cluster size:  218529.0
+merger 27 	number of clusters:  87 	 sizes of clusters, number of each size of cluster (array([ 1, 28]), array([86,  1])) 	max cluster size:  226858.0
+merger 28 	number of clusters:  86 	 sizes of clusters, number of each size of cluster (array([ 1, 29]), array([85,  1])) 	max cluster size:  232074.0
+merger 29 	number of clusters:  85 	 sizes of clusters, number of each size of cluster (array([ 1, 30]), array([84,  1])) 	max cluster size:  236999.0
+merger 30 	number of clusters:  84 	 sizes of clusters, number of each size of cluster (array([ 1, 31]), array([83,  1])) 	max cluster size:  240875.0
+merger 31 	number of clusters:  83 	 sizes of clusters, number of each size of cluster (array([ 1, 32]), array([82,  1])) 	max cluster size:  245954.0
+merger 32 	number of clusters:  82 	 sizes of clusters, number of each size of cluster (array([ 1, 33]), array([81,  1])) 	max cluster size:  253353.0
+merger 33 	number of clusters:  81 	 sizes of clusters, number of each size of cluster (array([ 1, 34]), array([80,  1])) 	max cluster size:  259360.0
+merger 34 	number of clusters:  80 	 sizes of clusters, number of each size of cluster (array([ 1, 35]), array([79,  1])) 	max cluster size:  262892.0
+merger 35 	number of clusters:  79 	 sizes of clusters, number of each size of cluster (array([ 1, 36]), array([78,  1])) 	max cluster size:  268826.0
+merger 36 	number of clusters:  78 	 sizes of clusters, number of each size of cluster (array([ 1, 37]), array([77,  1])) 	max cluster size:  274766.0
+merger 37 	number of clusters:  77 	 sizes of clusters, number of each size of cluster (array([ 1, 38]), array([76,  1])) 	max cluster size:  278977.0
+merger 38 	number of clusters:  76 	 sizes of clusters, number of each size of cluster (array([ 1, 39]), array([75,  1])) 	max cluster size:  287062.0
+merger 39 	number of clusters:  75 	 sizes of clusters, number of each size of cluster (array([ 1, 40]), array([74,  1])) 	max cluster size:  293618.0
+merger 40 	number of clusters:  74 	 sizes of clusters, number of each size of cluster (array([ 1, 41]), array([73,  1])) 	max cluster size:  296713.0
+merger 41 	number of clusters:  73 	 sizes of clusters, number of each size of cluster (array([ 1, 42]), array([72,  1])) 	max cluster size:  299626.0
+merger 42 	number of clusters:  72 	 sizes of clusters, number of each size of cluster (array([ 1, 43]), array([71,  1])) 	max cluster size:  303847.0
+merger 43 	number of clusters:  71 	 sizes of clusters, number of each size of cluster (array([ 1, 44]), array([70,  1])) 	max cluster size:  306760.0
+merger 44 	number of clusters:  70 	 sizes of clusters, number of each size of cluster (array([ 1, 45]), array([69,  1])) 	max cluster size:  310474.0
+merger 45 	number of clusters:  69 	 sizes of clusters, number of each size of cluster (array([ 1, 46]), array([68,  1])) 	max cluster size:  312917.0
+merger 46 	number of clusters:  68 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 46]), array([66,  1,  1])) 	max cluster size:  312917.0
+merger 47 	number of clusters:  67 	 sizes of clusters, number of each size of cluster (array([ 1, 48]), array([66,  1])) 	max cluster size:  324852.0
+merger 48 	number of clusters:  66 	 sizes of clusters, number of each size of cluster (array([ 1, 49]), array([65,  1])) 	max cluster size:  328567.0
+merger 49 	number of clusters:  65 	 sizes of clusters, number of each size of cluster (array([ 1, 50]), array([64,  1])) 	max cluster size:  331792.0
+merger 50 	number of clusters:  64 	 sizes of clusters, number of each size of cluster (array([ 1, 51]), array([63,  1])) 	max cluster size:  334231.0
+merger 51 	number of clusters:  63 	 sizes of clusters, number of each size of cluster (array([ 1, 52]), array([62,  1])) 	max cluster size:  336414.0
+merger 52 	number of clusters:  62 	 sizes of clusters, number of each size of cluster (array([ 1, 53]), array([61,  1])) 	max cluster size:  338469.0
+merger 53 	number of clusters:  61 	 sizes of clusters, number of each size of cluster (array([ 1, 54]), array([60,  1])) 	max cluster size:  340743.0
+merger 54 	number of clusters:  60 	 sizes of clusters, number of each size of cluster (array([ 1, 55]), array([59,  1])) 	max cluster size:  342283.0
+merger 55 	number of clusters:  59 	 sizes of clusters, number of each size of cluster (array([ 1, 56]), array([58,  1])) 	max cluster size:  344856.0
+merger 56 	number of clusters:  58 	 sizes of clusters, number of each size of cluster (array([ 1, 57]), array([57,  1])) 	max cluster size:  347502.0
+merger 57 	number of clusters:  57 	 sizes of clusters, number of each size of cluster (array([ 1, 58]), array([56,  1])) 	max cluster size:  351101.0
+merger 58 	number of clusters:  56 	 sizes of clusters, number of each size of cluster (array([ 1, 59]), array([55,  1])) 	max cluster size:  353475.0
+merger 59 	number of clusters:  55 	 sizes of clusters, number of each size of cluster (array([ 1, 60]), array([54,  1])) 	max cluster size:  356349.0
+merger 60 	number of clusters:  54 	 sizes of clusters, number of each size of cluster (array([ 1, 61]), array([53,  1])) 	max cluster size:  358816.0
+merger 61 	number of clusters:  53 	 sizes of clusters, number of each size of cluster (array([ 1, 62]), array([52,  1])) 	max cluster size:  362458.0
+merger 62 	number of clusters:  52 	 sizes of clusters, number of each size of cluster (array([ 1, 63]), array([51,  1])) 	max cluster size:  364990.0
+merger 63 	number of clusters:  51 	 sizes of clusters, number of each size of cluster (array([ 1, 64]), array([50,  1])) 	max cluster size:  366585.0
+merger 64 	number of clusters:  50 	 sizes of clusters, number of each size of cluster (array([ 1, 65]), array([49,  1])) 	max cluster size:  371727.0
+merger 65 	number of clusters:  49 	 sizes of clusters, number of each size of cluster (array([ 1, 66]), array([48,  1])) 	max cluster size:  374131.0
+merger 66 	number of clusters:  48 	 sizes of clusters, number of each size of cluster (array([ 1, 67]), array([47,  1])) 	max cluster size:  376768.0
+merger 67 	number of clusters:  47 	 sizes of clusters, number of each size of cluster (array([ 1, 68]), array([46,  1])) 	max cluster size:  379189.0
+merger 68 	number of clusters:  46 	 sizes of clusters, number of each size of cluster (array([ 1, 69]), array([45,  1])) 	max cluster size:  381385.0
+merger 69 	number of clusters:  45 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 69]), array([43,  1,  1])) 	max cluster size:  381385.0
+merger 70 	number of clusters:  44 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 70]), array([42,  1,  1])) 	max cluster size:  384340.0
+merger 71 	number of clusters:  43 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 71]), array([41,  1,  1])) 	max cluster size:  385824.0
+merger 72 	number of clusters:  42 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 72]), array([40,  1,  1])) 	max cluster size:  388474.0
+merger 73 	number of clusters:  41 	 sizes of clusters, number of each size of cluster (array([ 1, 74]), array([40,  1])) 	max cluster size:  392754.0
+merger 74 	number of clusters:  40 	 sizes of clusters, number of each size of cluster (array([ 1, 75]), array([39,  1])) 	max cluster size:  394408.0
+merger 75 	number of clusters:  39 	 sizes of clusters, number of each size of cluster (array([ 1, 76]), array([38,  1])) 	max cluster size:  397406.0
+merger 76 	number of clusters:  38 	 sizes of clusters, number of each size of cluster (array([ 1, 77]), array([37,  1])) 	max cluster size:  399167.0
+merger 77 	number of clusters:  37 	 sizes of clusters, number of each size of cluster (array([ 1, 78]), array([36,  1])) 	max cluster size:  401830.0
+merger 78 	number of clusters:  36 	 sizes of clusters, number of each size of cluster (array([ 1, 79]), array([35,  1])) 	max cluster size:  403884.0
+merger 79 	number of clusters:  35 	 sizes of clusters, number of each size of cluster (array([ 1, 80]), array([34,  1])) 	max cluster size:  405971.0
+merger 80 	number of clusters:  34 	 sizes of clusters, number of each size of cluster (array([ 1, 81]), array([33,  1])) 	max cluster size:  407750.0
+merger 81 	number of clusters:  33 	 sizes of clusters, number of each size of cluster (array([ 1, 82]), array([32,  1])) 	max cluster size:  409647.0
+merger 82 	number of clusters:  32 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 82]), array([30,  1,  1])) 	max cluster size:  409647.0
+merger 83 	number of clusters:  31 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 83]), array([29,  1,  1])) 	max cluster size:  410934.0
+merger 84 	number of clusters:  30 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 83]), array([27,  2,  1])) 	max cluster size:  410934.0
+merger 85 	number of clusters:  29 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  3, 83]), array([26,  1,  1,  1])) 	max cluster size:  410934.0
+merger 86 	number of clusters:  28 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  4, 83]), array([25,  1,  1,  1])) 	max cluster size:  410934.0
+merger 87 	number of clusters:  27 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([25,  1,  1])) 	max cluster size:  421697.0
+merger 88 	number of clusters:  26 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([23,  2,  1])) 	max cluster size:  421697.0
+merger 89 	number of clusters:  25 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 87]), array([21,  3,  1])) 	max cluster size:  421697.0
+merger 90 	number of clusters:  24 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 89]), array([21,  2,  1])) 	max cluster size:  425268.0
+merger 91 	number of clusters:  23 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 91]), array([21,  1,  1])) 	max cluster size:  428537.0
+merger 92 	number of clusters:  22 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 92]), array([20,  1,  1])) 	max cluster size:  430446.0
+merger 93 	number of clusters:  21 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 93]), array([19,  1,  1])) 	max cluster size:  432183.0
+merger 94 	number of clusters:  20 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 94]), array([18,  1,  1])) 	max cluster size:  434618.0
+merger 95 	number of clusters:  19 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 95]), array([17,  1,  1])) 	max cluster size:  437116.0
+merger 96 	number of clusters:  18 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 96]), array([16,  1,  1])) 	max cluster size:  439377.0
+merger 97 	number of clusters:  17 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 97]), array([15,  1,  1])) 	max cluster size:  441572.0
+merger 98 	number of clusters:  16 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 98]), array([14,  1,  1])) 	max cluster size:  443465.0
+merger 99 	number of clusters:  15 	 sizes of clusters, number of each size of cluster (array([ 1,  2, 98]), array([12,  2,  1])) 	max cluster size:  443465.0
+merger 100 	number of clusters:  14 	 sizes of clusters, number of each size of cluster (array([ 1,  2,  3, 98]), array([11,  1,  1,  1])) 	max cluster size:  443465.0
+merger 101 	number of clusters:  13 	 sizes of clusters, number of each size of cluster (array([  1,   2, 101]), array([11,  1,  1])) 	max cluster size:  447660.0
+merger 102 	number of clusters:  12 	 sizes of clusters, number of each size of cluster (array([  1,   2, 101]), array([9, 2, 1])) 	max cluster size:  447660.0
+merger 103 	number of clusters:  11 	 sizes of clusters, number of each size of cluster (array([  1,   2,   3, 101]), array([8, 1, 1, 1])) 	max cluster size:  447660.0
+merger 104 	number of clusters:  10 	 sizes of clusters, number of each size of cluster (array([  1,   2, 104]), array([8, 1, 1])) 	max cluster size:  453543.0
+merger 105 	number of clusters:  9 	 sizes of clusters, number of each size of cluster (array([  1, 106]), array([8, 1])) 	max cluster size:  457076.0
+merger 106 	number of clusters:  8 	 sizes of clusters, number of each size of cluster (array([  1, 107]), array([7, 1])) 	max cluster size:  458326.0
+merger 107 	number of clusters:  7 	 sizes of clusters, number of each size of cluster (array([  1, 108]), array([6, 1])) 	max cluster size:  459939.0
+merger 108 	number of clusters:  6 	 sizes of clusters, number of each size of cluster (array([  1, 109]), array([5, 1])) 	max cluster size:  462809.0
+merger 109 	number of clusters:  5 	 sizes of clusters, number of each size of cluster (array([  1, 110]), array([4, 1])) 	max cluster size:  464042.0
+merger 110 	number of clusters:  4 	 sizes of clusters, number of each size of cluster (array([  1, 111]), array([3, 1])) 	max cluster size:  465609.0
+merger 111 	number of clusters:  3 	 sizes of clusters, number of each size of cluster (array([  1, 112]), array([2, 1])) 	max cluster size:  466279.0
+merger 112 	number of clusters:  2 	 sizes of clusters, number of each size of cluster (array([  1, 113]), array([1, 1])) 	max cluster size:  467475.0
+merger 113 	number of clusters:  1 	 sizes of clusters, number of each size of cluster (array([114]), array([1])) 	max cluster size:  468202.0
