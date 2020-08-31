@@ -149,7 +149,7 @@ vae.metrics_names.append("kl_loss")
 
 
     
-# Training and Validation generators in a 95/5 split
+# Training and Validation generators in a 90/10 split
 training_generator = DataGenerator(segments[split_segment_indices[0]], errors[split_segment_indices[0]], batch_size=1024)
 validation_generator = DataGenerator(segments[split_segment_indices[1]], errors[split_segment_indices[1]], batch_size=1024)    
 
