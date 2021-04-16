@@ -1,0 +1,865 @@
+2020-12-25 11:30:17.222493: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2020-12-25 11:30:17.529254: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-25 11:30:17.529784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 11.91GiB freeMemory: 11.75GiB
+2020-12-25 11:30:17.529801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-12-25 11:30:17.806653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-25 11:30:17.806697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-12-25 11:30:17.806706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-12-25 11:30:17.806960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11366 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2020-12-25 11:30:18.540151: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x562000cc24b0
+Epoch 1/8000
+
+Epoch 00001: val_loss improved from inf to 714.36107, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 579.1883 - kl_loss: 0.4078 - val_loss: 714.3611 - val_kl_loss: 0.3592
+Epoch 2/8000
+
+Epoch 00002: val_loss improved from 714.36107 to 713.87330, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 265s - loss: 574.4147 - kl_loss: 0.3833 - val_loss: 713.8733 - val_kl_loss: 0.2768
+Epoch 3/8000
+
+Epoch 00003: val_loss did not improve from 713.87330
+ - 265s - loss: 574.0043 - kl_loss: 0.3015 - val_loss: 716.9438 - val_kl_loss: 0.2390
+Epoch 4/8000
+
+Epoch 00004: val_loss did not improve from 713.87330
+ - 266s - loss: 573.8188 - kl_loss: 0.2941 - val_loss: 716.1179 - val_kl_loss: 0.1963
+Epoch 5/8000
+
+Epoch 00005: val_loss did not improve from 713.87330
+ - 263s - loss: 573.7927 - kl_loss: 0.1953 - val_loss: 715.2200 - val_kl_loss: 0.2109
+Epoch 6/8000
+
+Epoch 00006: val_loss did not improve from 713.87330
+ - 265s - loss: 574.2681 - kl_loss: 0.2917 - val_loss: 716.0687 - val_kl_loss: 0.1090
+Epoch 7/8000
+
+Epoch 00007: val_loss did not improve from 713.87330
+ - 265s - loss: 573.8127 - kl_loss: 0.1026 - val_loss: 716.1958 - val_kl_loss: 0.1047
+Epoch 8/8000
+
+Epoch 00008: val_loss did not improve from 713.87330
+ - 269s - loss: 573.6857 - kl_loss: 0.1579 - val_loss: 714.8932 - val_kl_loss: 0.0841
+Epoch 9/8000
+
+Epoch 00009: val_loss did not improve from 713.87330
+ - 265s - loss: 573.5592 - kl_loss: 0.0721 - val_loss: 715.6821 - val_kl_loss: 0.1125
+Epoch 10/8000
+
+Epoch 00010: val_loss improved from 713.87330 to 589.76445, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 265s - loss: 525.9799 - kl_loss: 1.3610 - val_loss: 589.7644 - val_kl_loss: 2.2160
+Epoch 11/8000
+
+Epoch 00011: val_loss improved from 589.76445 to 500.80671, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 443.8394 - kl_loss: 2.4937 - val_loss: 500.8067 - val_kl_loss: 2.6642
+Epoch 12/8000
+
+Epoch 00012: val_loss improved from 500.80671 to 458.20192, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 265s - loss: 396.2089 - kl_loss: 2.8860 - val_loss: 458.2019 - val_kl_loss: 3.2285
+Epoch 13/8000
+
+Epoch 00013: val_loss improved from 458.20192 to 411.71008, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 357.6460 - kl_loss: 3.1281 - val_loss: 411.7101 - val_kl_loss: 3.0137
+Epoch 14/8000
+
+Epoch 00014: val_loss did not improve from 411.71008
+ - 265s - loss: 326.9446 - kl_loss: 3.1883 - val_loss: 428.1927 - val_kl_loss: 3.4551
+Epoch 15/8000
+
+Epoch 00015: val_loss improved from 411.71008 to 372.33215, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 269s - loss: 315.1457 - kl_loss: 3.6061 - val_loss: 372.3322 - val_kl_loss: 3.9296
+Epoch 16/8000
+
+Epoch 00016: val_loss did not improve from 372.33215
+ - 266s - loss: 309.0984 - kl_loss: 4.3083 - val_loss: 382.4822 - val_kl_loss: 5.1090
+Epoch 17/8000
+
+Epoch 00017: val_loss did not improve from 372.33215
+ - 266s - loss: 303.2160 - kl_loss: 6.1723 - val_loss: 374.4206 - val_kl_loss: 7.4678
+Epoch 18/8000
+
+Epoch 00018: val_loss improved from 372.33215 to 347.02314, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 300.1457 - kl_loss: 7.8377 - val_loss: 347.0231 - val_kl_loss: 8.4849
+Epoch 19/8000
+
+Epoch 00019: val_loss improved from 347.02314 to 337.43250, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 264s - loss: 288.5498 - kl_loss: 8.9470 - val_loss: 337.4325 - val_kl_loss: 8.7577
+Epoch 20/8000
+
+Epoch 00020: val_loss improved from 337.43250 to 314.51541, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 268.9400 - kl_loss: 8.2358 - val_loss: 314.5154 - val_kl_loss: 8.1203
+Epoch 21/8000
+
+Epoch 00021: val_loss did not improve from 314.51541
+ - 266s - loss: 263.1764 - kl_loss: 7.9972 - val_loss: 320.7625 - val_kl_loss: 8.3180
+Epoch 22/8000
+
+Epoch 00022: val_loss improved from 314.51541 to 302.25195, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 268s - loss: 245.4292 - kl_loss: 7.3874 - val_loss: 302.2520 - val_kl_loss: 6.9669
+Epoch 23/8000
+
+Epoch 00023: val_loss improved from 302.25195 to 284.33360, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 244.7941 - kl_loss: 7.2290 - val_loss: 284.3336 - val_kl_loss: 7.3655
+Epoch 24/8000
+
+Epoch 00024: val_loss did not improve from 284.33360
+ - 266s - loss: 238.3513 - kl_loss: 7.3945 - val_loss: 288.7332 - val_kl_loss: 8.0121
+Epoch 25/8000
+
+Epoch 00025: val_loss improved from 284.33360 to 258.83574, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 267s - loss: 243.7787 - kl_loss: 7.3757 - val_loss: 258.8357 - val_kl_loss: 7.5156
+Epoch 26/8000
+
+Epoch 00026: val_loss did not improve from 258.83574
+ - 264s - loss: 241.1942 - kl_loss: 7.5640 - val_loss: 285.0600 - val_kl_loss: 8.3885
+Epoch 27/8000
+
+Epoch 00027: val_loss did not improve from 258.83574
+ - 265s - loss: 233.7060 - kl_loss: 7.9422 - val_loss: 278.8444 - val_kl_loss: 7.8468
+Epoch 28/8000
+
+Epoch 00028: val_loss did not improve from 258.83574
+ - 265s - loss: 235.2962 - kl_loss: 8.4312 - val_loss: 308.3389 - val_kl_loss: 8.0709
+Epoch 29/8000
+
+Epoch 00029: val_loss did not improve from 258.83574
+ - 269s - loss: 224.1996 - kl_loss: 8.1517 - val_loss: 262.0198 - val_kl_loss: 8.3194
+Epoch 30/8000
+
+Epoch 00030: val_loss did not improve from 258.83574
+ - 267s - loss: 224.1269 - kl_loss: 8.2518 - val_loss: 283.2408 - val_kl_loss: 8.9418
+Epoch 31/8000
+
+Epoch 00031: val_loss did not improve from 258.83574
+ - 266s - loss: 230.8085 - kl_loss: 8.4447 - val_loss: 280.4983 - val_kl_loss: 8.0039
+Epoch 32/8000
+
+Epoch 00032: val_loss did not improve from 258.83574
+ - 266s - loss: 222.6801 - kl_loss: 8.0982 - val_loss: 358.1652 - val_kl_loss: 8.8033
+Epoch 33/8000
+
+Epoch 00033: val_loss did not improve from 258.83574
+ - 264s - loss: 218.7279 - kl_loss: 8.0309 - val_loss: 279.2057 - val_kl_loss: 8.4488
+Epoch 34/8000
+
+Epoch 00034: val_loss improved from 258.83574 to 246.12488, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 215.1837 - kl_loss: 7.7333 - val_loss: 246.1249 - val_kl_loss: 7.6823
+Epoch 35/8000
+
+Epoch 00035: val_loss did not improve from 246.12488
+ - 266s - loss: 211.6256 - kl_loss: 7.8322 - val_loss: 280.7823 - val_kl_loss: 7.5558
+Epoch 36/8000
+
+Epoch 00036: val_loss did not improve from 246.12488
+ - 269s - loss: 210.3859 - kl_loss: 7.6697 - val_loss: 273.7361 - val_kl_loss: 8.3153
+Epoch 37/8000
+
+Epoch 00037: val_loss improved from 246.12488 to 237.91632, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 215.9730 - kl_loss: 8.0237 - val_loss: 237.9163 - val_kl_loss: 8.2124
+Epoch 38/8000
+
+Epoch 00038: val_loss did not improve from 237.91632
+ - 266s - loss: 212.2036 - kl_loss: 8.2393 - val_loss: 244.3594 - val_kl_loss: 8.3217
+Epoch 39/8000
+
+Epoch 00039: val_loss improved from 237.91632 to 233.76200, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 268s - loss: 212.8168 - kl_loss: 8.3880 - val_loss: 233.7620 - val_kl_loss: 8.7581
+Epoch 40/8000
+
+Epoch 00040: val_loss improved from 233.76200 to 233.61056, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 265s - loss: 207.4148 - kl_loss: 8.7180 - val_loss: 233.6106 - val_kl_loss: 8.9845
+Epoch 41/8000
+
+Epoch 00041: val_loss did not improve from 233.61056
+ - 265s - loss: 205.1066 - kl_loss: 8.2409 - val_loss: 247.8732 - val_kl_loss: 7.6004
+Epoch 42/8000
+
+Epoch 00042: val_loss did not improve from 233.61056
+ - 266s - loss: 203.6928 - kl_loss: 8.1536 - val_loss: 235.3851 - val_kl_loss: 7.9599
+Epoch 43/8000
+
+Epoch 00043: val_loss did not improve from 233.61056
+ - 269s - loss: 198.7048 - kl_loss: 7.7661 - val_loss: 235.1247 - val_kl_loss: 8.0425
+Epoch 44/8000
+
+Epoch 00044: val_loss did not improve from 233.61056
+ - 267s - loss: 214.9452 - kl_loss: 7.4866 - val_loss: 262.7419 - val_kl_loss: 7.1909
+Epoch 45/8000
+
+Epoch 00045: val_loss did not improve from 233.61056
+ - 266s - loss: 201.5586 - kl_loss: 7.2707 - val_loss: 282.5399 - val_kl_loss: 6.8242
+Epoch 46/8000
+
+Epoch 00046: val_loss did not improve from 233.61056
+ - 267s - loss: 189.7966 - kl_loss: 7.1800 - val_loss: 235.5686 - val_kl_loss: 7.0384
+Epoch 47/8000
+
+Epoch 00047: val_loss did not improve from 233.61056
+ - 265s - loss: 187.7262 - kl_loss: 6.9382 - val_loss: 251.6008 - val_kl_loss: 7.2734
+Epoch 48/8000
+
+Epoch 00048: val_loss improved from 233.61056 to 217.79924, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 267s - loss: 197.7113 - kl_loss: 7.1876 - val_loss: 217.7992 - val_kl_loss: 7.4730
+Epoch 49/8000
+
+Epoch 00049: val_loss did not improve from 217.79924
+ - 266s - loss: 190.9439 - kl_loss: 7.2286 - val_loss: 221.0242 - val_kl_loss: 8.5539
+Epoch 50/8000
+
+Epoch 00050: val_loss did not improve from 217.79924
+ - 268s - loss: 206.1031 - kl_loss: 7.8098 - val_loss: 249.3944 - val_kl_loss: 8.3536
+Epoch 51/8000
+
+Epoch 00051: val_loss did not improve from 217.79924
+ - 267s - loss: 202.9321 - kl_loss: 7.8183 - val_loss: 233.7562 - val_kl_loss: 7.9718
+Epoch 52/8000
+
+Epoch 00052: val_loss did not improve from 217.79924
+ - 266s - loss: 196.4577 - kl_loss: 8.3869 - val_loss: 224.6834 - val_kl_loss: 8.3239
+Epoch 53/8000
+
+Epoch 00053: val_loss did not improve from 217.79924
+ - 267s - loss: 186.1784 - kl_loss: 8.0804 - val_loss: 238.1110 - val_kl_loss: 7.4358
+Epoch 54/8000
+
+Epoch 00054: val_loss did not improve from 217.79924
+ - 264s - loss: 186.8706 - kl_loss: 7.8261 - val_loss: 291.6953 - val_kl_loss: 8.7995
+Epoch 55/8000
+
+Epoch 00055: val_loss improved from 217.79924 to 195.49070, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 187.2608 - kl_loss: 7.9660 - val_loss: 195.4907 - val_kl_loss: 8.0311
+Epoch 56/8000
+
+Epoch 00056: val_loss improved from 195.49070 to 193.75152, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 267s - loss: 180.6238 - kl_loss: 7.7073 - val_loss: 193.7515 - val_kl_loss: 7.4542
+Epoch 57/8000
+
+Epoch 00057: val_loss did not improve from 193.75152
+ - 269s - loss: 174.7831 - kl_loss: 7.4647 - val_loss: 219.2331 - val_kl_loss: 7.0703
+Epoch 58/8000
+
+Epoch 00058: val_loss did not improve from 193.75152
+ - 266s - loss: 188.4338 - kl_loss: 7.6541 - val_loss: 215.9051 - val_kl_loss: 8.3024
+Epoch 59/8000
+
+Epoch 00059: val_loss did not improve from 193.75152
+ - 265s - loss: 184.7264 - kl_loss: 7.8922 - val_loss: 205.0953 - val_kl_loss: 7.8493
+Epoch 60/8000
+
+Epoch 00060: val_loss did not improve from 193.75152
+ - 267s - loss: 177.3284 - kl_loss: 7.4625 - val_loss: 229.1295 - val_kl_loss: 7.2271
+Epoch 61/8000
+
+Epoch 00061: val_loss did not improve from 193.75152
+ - 265s - loss: 179.7631 - kl_loss: 6.9486 - val_loss: 216.9016 - val_kl_loss: 7.7473
+Epoch 62/8000
+
+Epoch 00062: val_loss improved from 193.75152 to 189.05075, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 267s - loss: 177.0833 - kl_loss: 7.1282 - val_loss: 189.0508 - val_kl_loss: 6.9596
+Epoch 63/8000
+
+Epoch 00063: val_loss did not improve from 189.05075
+ - 266s - loss: 164.4852 - kl_loss: 6.4083 - val_loss: 204.9832 - val_kl_loss: 6.6612
+Epoch 64/8000
+
+Epoch 00064: val_loss did not improve from 189.05075
+ - 268s - loss: 203.8221 - kl_loss: 6.2989 - val_loss: 313.3590 - val_kl_loss: 6.1529
+Epoch 65/8000
+
+Epoch 00065: val_loss did not improve from 189.05075
+ - 266s - loss: 208.6072 - kl_loss: 6.2119 - val_loss: 275.5321 - val_kl_loss: 5.4223
+Epoch 66/8000
+
+Epoch 00066: val_loss did not improve from 189.05075
+ - 266s - loss: 197.8502 - kl_loss: 5.7356 - val_loss: 214.6646 - val_kl_loss: 5.7395
+Epoch 67/8000
+
+Epoch 00067: val_loss did not improve from 189.05075
+ - 268s - loss: 207.5113 - kl_loss: 5.4527 - val_loss: 247.3920 - val_kl_loss: 6.2260
+Epoch 68/8000
+
+Epoch 00068: val_loss did not improve from 189.05075
+ - 264s - loss: 226.3667 - kl_loss: 26.4799 - val_loss: 256.1610 - val_kl_loss: 6.2003
+Epoch 69/8000
+
+Epoch 00069: val_loss did not improve from 189.05075
+ - 266s - loss: 217.9627 - kl_loss: 6.0648 - val_loss: 239.2395 - val_kl_loss: 5.8277
+Epoch 70/8000
+
+Epoch 00070: val_loss did not improve from 189.05075
+ - 266s - loss: 211.7315 - kl_loss: 5.7463 - val_loss: 232.9196 - val_kl_loss: 6.0913
+Epoch 71/8000
+
+Epoch 00071: val_loss did not improve from 189.05075
+ - 270s - loss: 190.3432 - kl_loss: 5.8101 - val_loss: 270.1088 - val_kl_loss: 6.8743
+Epoch 72/8000
+
+Epoch 00072: val_loss did not improve from 189.05075
+ - 266s - loss: 206.5239 - kl_loss: 6.1484 - val_loss: 275.3890 - val_kl_loss: 6.0156
+Epoch 73/8000
+
+Epoch 00073: val_loss did not improve from 189.05075
+ - 266s - loss: 207.5515 - kl_loss: 6.1039 - val_loss: 315.9964 - val_kl_loss: 6.6266
+Epoch 74/8000
+
+Epoch 00074: val_loss did not improve from 189.05075
+ - 267s - loss: 14767.4335 - kl_loss: 14572.4943 - val_loss: 236.0172 - val_kl_loss: 6.7961
+Epoch 75/8000
+
+Epoch 00075: val_loss did not improve from 189.05075
+ - 265s - loss: 204.7672 - kl_loss: 6.8463 - val_loss: 219.4588 - val_kl_loss: 6.9576
+Epoch 76/8000
+
+Epoch 00076: val_loss did not improve from 189.05075
+ - 266s - loss: 205.2570 - kl_loss: 7.2285 - val_loss: 270.8997 - val_kl_loss: 7.1553
+Epoch 77/8000
+
+Epoch 00077: val_loss did not improve from 189.05075
+ - 265s - loss: 217.5846 - kl_loss: 7.9720 - val_loss: 225.0671 - val_kl_loss: 8.2163
+Epoch 78/8000
+
+Epoch 00078: val_loss did not improve from 189.05075
+ - 269s - loss: 219.0025 - kl_loss: 9.0677 - val_loss: 238.1317 - val_kl_loss: 9.6657
+Epoch 79/8000
+
+Epoch 00079: val_loss did not improve from 189.05075
+ - 267s - loss: 221.9868 - kl_loss: 9.0956 - val_loss: 281.5031 - val_kl_loss: 8.9998
+Epoch 80/8000
+
+Epoch 00080: val_loss did not improve from 189.05075
+ - 267s - loss: 221.6483 - kl_loss: 8.4230 - val_loss: 261.1856 - val_kl_loss: 8.3429
+Epoch 81/8000
+
+Epoch 00081: val_loss did not improve from 189.05075
+ - 266s - loss: 207.5797 - kl_loss: 8.5181 - val_loss: 222.8913 - val_kl_loss: 9.5117
+Epoch 82/8000
+
+Epoch 00082: val_loss did not improve from 189.05075
+ - 265s - loss: 193.4213 - kl_loss: 9.1202 - val_loss: 217.3689 - val_kl_loss: 9.3764
+Epoch 83/8000
+
+Epoch 00083: val_loss did not improve from 189.05075
+ - 267s - loss: 208.9894 - kl_loss: 9.2844 - val_loss: 268.7365 - val_kl_loss: 9.1028
+Epoch 84/8000
+
+Epoch 00084: val_loss did not improve from 189.05075
+ - 266s - loss: 211.9429 - kl_loss: 9.5131 - val_loss: 264.6317 - val_kl_loss: 10.5478
+Epoch 85/8000
+
+Epoch 00085: val_loss did not improve from 189.05075
+ - 269s - loss: 206.8322 - kl_loss: 9.9248 - val_loss: 260.8477 - val_kl_loss: 8.8354
+Epoch 86/8000
+
+Epoch 00086: val_loss did not improve from 189.05075
+ - 267s - loss: 204.0457 - kl_loss: 9.1085 - val_loss: 256.8831 - val_kl_loss: 8.7471
+Epoch 87/8000
+
+Epoch 00087: val_loss did not improve from 189.05075
+ - 266s - loss: 194.6573 - kl_loss: 9.3155 - val_loss: 259.1420 - val_kl_loss: 9.9018
+Epoch 88/8000
+
+Epoch 00088: val_loss did not improve from 189.05075
+ - 268s - loss: 202.8236 - kl_loss: 9.2897 - val_loss: 236.6968 - val_kl_loss: 9.1488
+Epoch 89/8000
+
+Epoch 00089: val_loss did not improve from 189.05075
+ - 264s - loss: 195.6548 - kl_loss: 8.9008 - val_loss: 275.2201 - val_kl_loss: 8.8579
+Epoch 90/8000
+
+Epoch 00090: val_loss did not improve from 189.05075
+ - 265s - loss: 210.1175 - kl_loss: 9.0198 - val_loss: 224.0767 - val_kl_loss: 8.2276
+Epoch 91/8000
+
+Epoch 00091: val_loss did not improve from 189.05075
+ - 266s - loss: 197.2679 - kl_loss: 7.8088 - val_loss: 199.5932 - val_kl_loss: 7.5306
+Epoch 92/8000
+
+Epoch 00092: val_loss did not improve from 189.05075
+ - 269s - loss: 180.7634 - kl_loss: 7.4803 - val_loss: 211.6712 - val_kl_loss: 7.5223
+Epoch 93/8000
+
+Epoch 00093: val_loss did not improve from 189.05075
+ - 267s - loss: 187.0309 - kl_loss: 7.2232 - val_loss: 199.9368 - val_kl_loss: 7.1208
+Epoch 94/8000
+
+Epoch 00094: val_loss did not improve from 189.05075
+ - 267s - loss: 194.3572 - kl_loss: 7.1525 - val_loss: 217.3559 - val_kl_loss: 6.9788
+Epoch 95/8000
+
+Epoch 00095: val_loss did not improve from 189.05075
+ - 267s - loss: 184.6339 - kl_loss: 7.0418 - val_loss: 214.9007 - val_kl_loss: 6.9796
+Epoch 96/8000
+
+Epoch 00096: val_loss did not improve from 189.05075
+ - 265s - loss: 191.7611 - kl_loss: 6.9256 - val_loss: 189.3663 - val_kl_loss: 6.6037
+Epoch 97/8000
+
+Epoch 00097: val_loss did not improve from 189.05075
+ - 266s - loss: 178.4773 - kl_loss: 6.8703 - val_loss: 195.3412 - val_kl_loss: 7.2445
+Epoch 98/8000
+
+Epoch 00098: val_loss did not improve from 189.05075
+ - 266s - loss: 184.0695 - kl_loss: 6.7643 - val_loss: 268.6300 - val_kl_loss: 7.4583
+Epoch 99/8000
+
+Epoch 00099: val_loss did not improve from 189.05075
+ - 269s - loss: 189.3036 - kl_loss: 6.8006 - val_loss: 204.1348 - val_kl_loss: 6.5247
+Epoch 100/8000
+
+Epoch 00100: val_loss did not improve from 189.05075
+ - 266s - loss: 194.1709 - kl_loss: 7.0363 - val_loss: 223.6172 - val_kl_loss: 7.1321
+Epoch 101/8000
+
+Epoch 00101: val_loss did not improve from 189.05075
+ - 266s - loss: 179.5875 - kl_loss: 6.7773 - val_loss: 219.6601 - val_kl_loss: 6.8553
+Epoch 102/8000
+
+Epoch 00102: val_loss did not improve from 189.05075
+ - 268s - loss: 172.8403 - kl_loss: 6.6409 - val_loss: 259.7593 - val_kl_loss: 6.3447
+Epoch 103/8000
+
+Epoch 00103: val_loss did not improve from 189.05075
+ - 266s - loss: 177.2378 - kl_loss: 6.8267 - val_loss: 220.2790 - val_kl_loss: 6.9306
+Epoch 104/8000
+
+Epoch 00104: val_loss did not improve from 189.05075
+ - 266s - loss: 194.5683 - kl_loss: 7.4887 - val_loss: 206.5023 - val_kl_loss: 7.5255
+Epoch 105/8000
+
+Epoch 00105: val_loss did not improve from 189.05075
+ - 266s - loss: 196.0141 - kl_loss: 7.8894 - val_loss: 305.5811 - val_kl_loss: 8.2817
+Epoch 106/8000
+
+Epoch 00106: val_loss did not improve from 189.05075
+ - 269s - loss: 197.2622 - kl_loss: 8.3810 - val_loss: 251.8695 - val_kl_loss: 8.6408
+Epoch 107/8000
+
+Epoch 00107: val_loss did not improve from 189.05075
+ - 267s - loss: 195.0169 - kl_loss: 8.1966 - val_loss: 234.0666 - val_kl_loss: 8.4001
+Epoch 108/8000
+
+Epoch 00108: val_loss did not improve from 189.05075
+ - 266s - loss: 172.1044 - kl_loss: 8.1609 - val_loss: 208.2831 - val_kl_loss: 8.1495
+Epoch 109/8000
+
+Epoch 00109: val_loss did not improve from 189.05075
+ - 267s - loss: 176.5144 - kl_loss: 8.0964 - val_loss: 221.9795 - val_kl_loss: 8.3701
+Epoch 110/8000
+
+Epoch 00110: val_loss did not improve from 189.05075
+ - 265s - loss: 185.7462 - kl_loss: 8.2133 - val_loss: 212.0007 - val_kl_loss: 8.0677
+Epoch 111/8000
+
+Epoch 00111: val_loss did not improve from 189.05075
+ - 267s - loss: 194.8101 - kl_loss: 8.2138 - val_loss: 205.0657 - val_kl_loss: 8.0373
+Epoch 112/8000
+
+Epoch 00112: val_loss improved from 189.05075 to 187.48519, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 167.7999 - kl_loss: 7.9950 - val_loss: 187.4852 - val_kl_loss: 7.8165
+Epoch 113/8000
+
+Epoch 00113: val_loss did not improve from 187.48519
+ - 269s - loss: 175.6363 - kl_loss: 7.9636 - val_loss: 245.9112 - val_kl_loss: 8.8528
+Epoch 114/8000
+
+Epoch 00114: val_loss did not improve from 187.48519
+ - 267s - loss: 180.0783 - kl_loss: 8.2655 - val_loss: 202.2620 - val_kl_loss: 8.3019
+Epoch 115/8000
+
+Epoch 00115: val_loss did not improve from 187.48519
+ - 266s - loss: 196.6856 - kl_loss: 8.4049 - val_loss: 260.0997 - val_kl_loss: 8.0855
+Epoch 116/8000
+
+Epoch 00116: val_loss did not improve from 187.48519
+ - 267s - loss: 237.3056 - kl_loss: 8.7884 - val_loss: 321.6319 - val_kl_loss: 8.7069
+Epoch 117/8000
+
+Epoch 00117: val_loss did not improve from 187.48519
+ - 264s - loss: 218.7285 - kl_loss: 8.6630 - val_loss: 241.6289 - val_kl_loss: 8.3327
+Epoch 118/8000
+
+Epoch 00118: val_loss did not improve from 187.48519
+ - 266s - loss: 217.3839 - kl_loss: 8.7070 - val_loss: 269.8133 - val_kl_loss: 8.9586
+Epoch 119/8000
+
+Epoch 00119: val_loss did not improve from 187.48519
+ - 266s - loss: 212.1485 - kl_loss: 8.8234 - val_loss: 256.7996 - val_kl_loss: 9.3475
+Epoch 120/8000
+
+Epoch 00120: val_loss did not improve from 187.48519
+ - 269s - loss: 189.7302 - kl_loss: 8.6698 - val_loss: 237.9935 - val_kl_loss: 9.0185
+Epoch 121/8000
+
+Epoch 00121: val_loss did not improve from 187.48519
+ - 265s - loss: 180.4326 - kl_loss: 8.5891 - val_loss: 214.2035 - val_kl_loss: 8.8573
+Epoch 122/8000
+
+Epoch 00122: val_loss did not improve from 187.48519
+ - 265s - loss: 168.8954 - kl_loss: 8.8175 - val_loss: 196.4126 - val_kl_loss: 8.7831
+Epoch 123/8000
+
+Epoch 00123: val_loss did not improve from 187.48519
+ - 267s - loss: 165.3741 - kl_loss: 8.7177 - val_loss: 193.8423 - val_kl_loss: 8.9994
+Epoch 124/8000
+
+Epoch 00124: val_loss improved from 187.48519 to 178.48700, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 265s - loss: 177.7988 - kl_loss: 8.9992 - val_loss: 178.4870 - val_kl_loss: 9.2505
+Epoch 125/8000
+
+Epoch 00125: val_loss did not improve from 178.48700
+ - 267s - loss: 170.6390 - kl_loss: 9.0539 - val_loss: 224.0774 - val_kl_loss: 9.1303
+Epoch 126/8000
+
+Epoch 00126: val_loss did not improve from 178.48700
+ - 266s - loss: 176.7029 - kl_loss: 8.7223 - val_loss: 196.4695 - val_kl_loss: 8.9779
+Epoch 127/8000
+
+Epoch 00127: val_loss did not improve from 178.48700
+ - 269s - loss: 164.2835 - kl_loss: 8.6390 - val_loss: 216.8968 - val_kl_loss: 8.4418
+Epoch 128/8000
+
+Epoch 00128: val_loss did not improve from 178.48700
+ - 266s - loss: 167.1385 - kl_loss: 8.3315 - val_loss: 248.7185 - val_kl_loss: 8.8330
+Epoch 129/8000
+
+Epoch 00129: val_loss did not improve from 178.48700
+ - 266s - loss: 165.6717 - kl_loss: 8.2765 - val_loss: 219.4113 - val_kl_loss: 8.9012
+Epoch 130/8000
+
+Epoch 00130: val_loss improved from 178.48700 to 172.75594, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 268s - loss: 155.8643 - kl_loss: 8.8357 - val_loss: 172.7559 - val_kl_loss: 8.6463
+Epoch 131/8000
+
+Epoch 00131: val_loss did not improve from 172.75594
+ - 265s - loss: 170.6873 - kl_loss: 8.9907 - val_loss: 201.8421 - val_kl_loss: 8.8700
+Epoch 132/8000
+
+Epoch 00132: val_loss did not improve from 172.75594
+ - 266s - loss: 165.4625 - kl_loss: 9.2290 - val_loss: 176.1294 - val_kl_loss: 9.5891
+Epoch 133/8000
+
+Epoch 00133: val_loss did not improve from 172.75594
+ - 266s - loss: 169.3948 - kl_loss: 8.9862 - val_loss: 203.4894 - val_kl_loss: 9.2511
+Epoch 134/8000
+
+Epoch 00134: val_loss did not improve from 172.75594
+ - 269s - loss: 172.6312 - kl_loss: 9.2869 - val_loss: 202.3208 - val_kl_loss: 9.5807
+Epoch 135/8000
+
+Epoch 00135: val_loss did not improve from 172.75594
+ - 266s - loss: 186.9607 - kl_loss: 9.6044 - val_loss: 221.4629 - val_kl_loss: 9.9125
+Epoch 136/8000
+
+Epoch 00136: val_loss improved from 172.75594 to 171.54014, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 170.4118 - kl_loss: 9.6469 - val_loss: 171.5401 - val_kl_loss: 9.5473
+Epoch 137/8000
+
+Epoch 00137: val_loss did not improve from 171.54014
+ - 267s - loss: 167.2423 - kl_loss: 9.4129 - val_loss: 189.4679 - val_kl_loss: 9.7729
+Epoch 138/8000
+
+Epoch 00138: val_loss did not improve from 171.54014
+ - 265s - loss: 163.0917 - kl_loss: 9.5433 - val_loss: 216.6722 - val_kl_loss: 8.5797
+Epoch 139/8000
+
+Epoch 00139: val_loss did not improve from 171.54014
+ - 266s - loss: 174.5475 - kl_loss: 9.9199 - val_loss: 208.7865 - val_kl_loss: 9.8971
+Epoch 140/8000
+
+Epoch 00140: val_loss did not improve from 171.54014
+ - 265s - loss: 184.0468 - kl_loss: 10.2471 - val_loss: 191.3173 - val_kl_loss: 9.9755
+Epoch 141/8000
+
+Epoch 00141: val_loss did not improve from 171.54014
+ - 269s - loss: 158.5460 - kl_loss: 9.2139 - val_loss: 215.3051 - val_kl_loss: 8.9850
+Epoch 142/8000
+
+Epoch 00142: val_loss did not improve from 171.54014
+ - 267s - loss: 152.6120 - kl_loss: 8.4103 - val_loss: 199.4611 - val_kl_loss: 8.1688
+Epoch 143/8000
+
+Epoch 00143: val_loss did not improve from 171.54014
+ - 267s - loss: 162.4609 - kl_loss: 9.6788 - val_loss: 195.9044 - val_kl_loss: 8.2160
+Epoch 144/8000
+
+Epoch 00144: val_loss did not improve from 171.54014
+ - 267s - loss: 172.0491 - kl_loss: 8.7939 - val_loss: 200.2706 - val_kl_loss: 9.7366
+Epoch 145/8000
+
+Epoch 00145: val_loss did not improve from 171.54014
+ - 265s - loss: 171.5276 - kl_loss: 8.5336 - val_loss: 179.6239 - val_kl_loss: 8.8101
+Epoch 146/8000
+
+Epoch 00146: val_loss did not improve from 171.54014
+ - 266s - loss: 156.3701 - kl_loss: 8.2709 - val_loss: 183.5186 - val_kl_loss: 7.9268
+Epoch 147/8000
+
+Epoch 00147: val_loss did not improve from 171.54014
+ - 266s - loss: 151.4795 - kl_loss: 7.8603 - val_loss: 181.8897 - val_kl_loss: 7.7262
+Epoch 148/8000
+
+Epoch 00148: val_loss did not improve from 171.54014
+ - 269s - loss: 155.3351 - kl_loss: 7.6088 - val_loss: 209.9520 - val_kl_loss: 8.1160
+Epoch 149/8000
+
+Epoch 00149: val_loss did not improve from 171.54014
+ - 266s - loss: 154.5595 - kl_loss: 7.7882 - val_loss: 189.1090 - val_kl_loss: 7.2848
+Epoch 150/8000
+
+Epoch 00150: val_loss did not improve from 171.54014
+ - 266s - loss: 157.8515 - kl_loss: 7.8384 - val_loss: 182.1007 - val_kl_loss: 7.2552
+Epoch 151/8000
+
+Epoch 00151: val_loss did not improve from 171.54014
+ - 268s - loss: 167.2507 - kl_loss: 7.5187 - val_loss: 183.9875 - val_kl_loss: 6.9573
+Epoch 152/8000
+
+Epoch 00152: val_loss did not improve from 171.54014
+ - 265s - loss: 164.3830 - kl_loss: 7.2195 - val_loss: 190.0542 - val_kl_loss: 7.3100
+Epoch 153/8000
+
+Epoch 00153: val_loss did not improve from 171.54014
+ - 265s - loss: 161.5725 - kl_loss: 6.9662 - val_loss: 213.3293 - val_kl_loss: 7.5042
+Epoch 154/8000
+
+Epoch 00154: val_loss did not improve from 171.54014
+ - 265s - loss: 159.1239 - kl_loss: 6.7833 - val_loss: 216.1363 - val_kl_loss: 6.3084
+Epoch 155/8000
+
+Epoch 00155: val_loss did not improve from 171.54014
+ - 269s - loss: 158.9358 - kl_loss: 6.4041 - val_loss: 192.8242 - val_kl_loss: 6.5774
+Epoch 156/8000
+
+Epoch 00156: val_loss did not improve from 171.54014
+ - 267s - loss: 149.8926 - kl_loss: 6.2172 - val_loss: 182.1978 - val_kl_loss: 6.0449
+Epoch 157/8000
+
+Epoch 00157: val_loss did not improve from 171.54014
+ - 267s - loss: 155.2177 - kl_loss: 6.2516 - val_loss: 250.7944 - val_kl_loss: 7.1391
+Epoch 158/8000
+
+Epoch 00158: val_loss did not improve from 171.54014
+ - 267s - loss: 185.8960 - kl_loss: 6.9779 - val_loss: 187.0279 - val_kl_loss: 7.0022
+Epoch 159/8000
+
+Epoch 00159: val_loss did not improve from 171.54014
+ - 264s - loss: 158.5802 - kl_loss: 6.1486 - val_loss: 184.0309 - val_kl_loss: 6.1566
+Epoch 160/8000
+
+Epoch 00160: val_loss did not improve from 171.54014
+ - 266s - loss: 174.6557 - kl_loss: 6.0738 - val_loss: 193.4820 - val_kl_loss: 6.4583
+Epoch 161/8000
+
+Epoch 00161: val_loss did not improve from 171.54014
+ - 266s - loss: 159.6523 - kl_loss: 6.0010 - val_loss: 183.3544 - val_kl_loss: 6.0623
+Epoch 162/8000
+
+Epoch 00162: val_loss improved from 171.54014 to 171.13898, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 270s - loss: 148.9061 - kl_loss: 5.8770 - val_loss: 171.1390 - val_kl_loss: 5.9252
+Epoch 163/8000
+
+Epoch 00163: val_loss improved from 171.13898 to 161.59165, saving model to ../../model_weights/model_2020-12-25_11-30-16.h5
+ - 266s - loss: 156.6185 - kl_loss: 5.5470 - val_loss: 161.5917 - val_kl_loss: 5.9900
+Epoch 164/8000
+
+Epoch 00164: val_loss did not improve from 161.59165
+ - 266s - loss: 139.7891 - kl_loss: 5.4522 - val_loss: 191.0355 - val_kl_loss: 5.2055
+Epoch 165/8000
+
+Epoch 00165: val_loss did not improve from 161.59165
+ - 268s - loss: 140.0162 - kl_loss: 5.4198 - val_loss: 202.0988 - val_kl_loss: 5.8869
+Epoch 166/8000
+
+Epoch 00166: val_loss did not improve from 161.59165
+ - 264s - loss: 1176.0961 - kl_loss: 361.1114 - val_loss: 1043.4633 - val_kl_loss: 324.8577
+Epoch 167/8000
+
+Epoch 00167: val_loss did not improve from 161.59165
+ - 263s - loss: 855.5397 - kl_loss: 162.8382 - val_loss: 933.1688 - val_kl_loss: 139.8291
+Epoch 168/8000
+
+Epoch 00168: val_loss did not improve from 161.59165
+ - 262s - loss: 763.2481 - kl_loss: 89.4288 - val_loss: 932.1777 - val_kl_loss: 66.6242
+Epoch 169/8000
+
+Epoch 00169: val_loss did not improve from 161.59165
+ - 266s - loss: 753.1699 - kl_loss: 69.4318 - val_loss: 735.8455 - val_kl_loss: 68.9198
+Epoch 170/8000
+
+Epoch 00170: val_loss did not improve from 161.59165
+ - 264s - loss: 625.0079 - kl_loss: 55.4885 - val_loss: 712.8282 - val_kl_loss: 54.6517
+Epoch 171/8000
+
+Epoch 00171: val_loss did not improve from 161.59165
+ - 263s - loss: 647.5516 - kl_loss: 43.9707 - val_loss: 645.9625 - val_kl_loss: 39.0839
+Epoch 172/8000
+
+Epoch 00172: val_loss did not improve from 161.59165
+ - 264s - loss: 698.0621 - kl_loss: 39.3421 - val_loss: 2163.2391 - val_kl_loss: 42.3010
+Epoch 173/8000
+
+Epoch 00173: val_loss did not improve from 161.59165
+ - 262s - loss: 734.7590 - kl_loss: 57.7178 - val_loss: 759.8801 - val_kl_loss: 62.9645
+Epoch 174/8000
+
+Epoch 00174: val_loss did not improve from 161.59165
+ - 263s - loss: 663.6803 - kl_loss: 60.3172 - val_loss: 732.5332 - val_kl_loss: 59.9598
+Epoch 175/8000
+
+Epoch 00175: val_loss did not improve from 161.59165
+ - 263s - loss: 615.3781 - kl_loss: 54.8259 - val_loss: 823.2827 - val_kl_loss: 51.7246
+Epoch 176/8000
+
+Epoch 00176: val_loss did not improve from 161.59165
+ - 266s - loss: 587.2914 - kl_loss: 38.6265 - val_loss: 1007.0119 - val_kl_loss: 29.1994
+Epoch 177/8000
+
+Epoch 00177: val_loss did not improve from 161.59165
+ - 265s - loss: 572.8315 - kl_loss: 21.2678 - val_loss: 563.5124 - val_kl_loss: 16.4902
+Epoch 178/8000
+
+Epoch 00178: val_loss did not improve from 161.59165
+ - 266s - loss: 414.5139 - kl_loss: 16.1078 - val_loss: 484.2043 - val_kl_loss: 14.8853
+Epoch 179/8000
+
+Epoch 00179: val_loss did not improve from 161.59165
+ - 267s - loss: 378.2009 - kl_loss: 14.0940 - val_loss: 457.1575 - val_kl_loss: 13.8524
+Epoch 180/8000
+
+Epoch 00180: val_loss did not improve from 161.59165
+ - 264s - loss: 359.2414 - kl_loss: 13.3648 - val_loss: 428.1681 - val_kl_loss: 12.3318
+Epoch 181/8000
+
+Epoch 00181: val_loss did not improve from 161.59165
+ - 265s - loss: 352.1409 - kl_loss: 11.9410 - val_loss: 467.2225 - val_kl_loss: 13.1779
+Epoch 182/8000
+
+Epoch 00182: val_loss did not improve from 161.59165
+ - 266s - loss: 342.8722 - kl_loss: 13.3747 - val_loss: 413.1086 - val_kl_loss: 13.1704
+Epoch 183/8000
+
+Epoch 00183: val_loss did not improve from 161.59165
+ - 269s - loss: 330.9389 - kl_loss: 13.1397 - val_loss: 401.5319 - val_kl_loss: 11.8927
+Epoch 184/8000
+
+Epoch 00184: val_loss did not improve from 161.59165
+ - 266s - loss: 319.1687 - kl_loss: 11.0601 - val_loss: 437.0015 - val_kl_loss: 10.8246
+Epoch 185/8000
+
+Epoch 00185: val_loss did not improve from 161.59165
+ - 265s - loss: 310.0140 - kl_loss: 10.1980 - val_loss: 356.2259 - val_kl_loss: 10.4942
+Epoch 186/8000
+
+Epoch 00186: val_loss did not improve from 161.59165
+ - 266s - loss: 302.8624 - kl_loss: 10.6678 - val_loss: 360.1401 - val_kl_loss: 11.4179
+Epoch 187/8000
+
+Epoch 00187: val_loss did not improve from 161.59165
+ - 264s - loss: 298.6597 - kl_loss: 10.6698 - val_loss: 395.3731 - val_kl_loss: 10.4459
+Epoch 188/8000
+
+Epoch 00188: val_loss did not improve from 161.59165
+ - 266s - loss: 290.6805 - kl_loss: 10.3812 - val_loss: 347.5367 - val_kl_loss: 10.4887
+Epoch 189/8000
+
+Epoch 00189: val_loss did not improve from 161.59165
+ - 266s - loss: 280.8388 - kl_loss: 10.6188 - val_loss: 334.2911 - val_kl_loss: 10.8484
+Epoch 190/8000
+
+Epoch 00190: val_loss did not improve from 161.59165
+ - 269s - loss: 276.5532 - kl_loss: 10.6347 - val_loss: 326.0144 - val_kl_loss: 10.2682
+Epoch 191/8000
+
+Epoch 00191: val_loss did not improve from 161.59165
+ - 265s - loss: 274.2444 - kl_loss: 10.5601 - val_loss: 342.3210 - val_kl_loss: 10.4624
+Epoch 192/8000
+
+Epoch 00192: val_loss did not improve from 161.59165
+ - 266s - loss: 271.5078 - kl_loss: 10.2374 - val_loss: 322.6687 - val_kl_loss: 10.6385
+Epoch 193/8000
+
+Epoch 00193: val_loss did not improve from 161.59165
+ - 267s - loss: 265.9538 - kl_loss: 9.9103 - val_loss: 323.5346 - val_kl_loss: 9.8877
+Epoch 194/8000
+
+Epoch 00194: val_loss did not improve from 161.59165
+ - 265s - loss: 260.6408 - kl_loss: 10.0947 - val_loss: 294.2193 - val_kl_loss: 10.0108
+Epoch 195/8000
+
+Epoch 00195: val_loss did not improve from 161.59165
+ - 265s - loss: 262.9749 - kl_loss: 10.0675 - val_loss: 344.5547 - val_kl_loss: 11.0098
+Epoch 196/8000
+
+Epoch 00196: val_loss did not improve from 161.59165
+ - 265s - loss: 259.7406 - kl_loss: 9.9298 - val_loss: 293.6815 - val_kl_loss: 9.4755
+Epoch 197/8000
+
+Epoch 00197: val_loss did not improve from 161.59165
+ - 269s - loss: 247.8490 - kl_loss: 10.2223 - val_loss: 289.1268 - val_kl_loss: 11.2852
+Epoch 198/8000
+
+Epoch 00198: val_loss did not improve from 161.59165
+ - 266s - loss: 253.5619 - kl_loss: 10.7942 - val_loss: 292.0399 - val_kl_loss: 11.0222
+Epoch 199/8000
+
+Epoch 00199: val_loss did not improve from 161.59165
+ - 265s - loss: 241.8625 - kl_loss: 10.5072 - val_loss: 326.1864 - val_kl_loss: 10.5712
+Epoch 200/8000
+
+Epoch 00200: val_loss did not improve from 161.59165
+ - 266s - loss: 241.4429 - kl_loss: 10.2803 - val_loss: 289.1834 - val_kl_loss: 10.1168
+Epoch 201/8000
+
+Epoch 00201: val_loss did not improve from 161.59165
+ - 265s - loss: 233.7924 - kl_loss: 10.0689 - val_loss: 295.3243 - val_kl_loss: 10.2596
+Epoch 202/8000
+
+Epoch 00202: val_loss did not improve from 161.59165
+ - 266s - loss: 225.4558 - kl_loss: 9.9706 - val_loss: 277.0519 - val_kl_loss: 9.6687
+Epoch 203/8000
+
+Epoch 00203: val_loss did not improve from 161.59165
+ - 265s - loss: 228.7759 - kl_loss: 9.6427 - val_loss: 296.0736 - val_kl_loss: 9.8796
+Epoch 204/8000
+
+Epoch 00204: val_loss did not improve from 161.59165
+ - 268s - loss: 225.0240 - kl_loss: 9.3560 - val_loss: 274.0179 - val_kl_loss: 9.1030
+Epoch 205/8000
+
+Epoch 00205: val_loss did not improve from 161.59165
+ - 266s - loss: 221.1442 - kl_loss: 9.3633 - val_loss: 256.9565 - val_kl_loss: 10.1288
+Epoch 206/8000
+
+Epoch 00206: val_loss did not improve from 161.59165
+ - 266s - loss: 215.3902 - kl_loss: 9.3344 - val_loss: 244.3113 - val_kl_loss: 8.6759
+Epoch 207/8000
+
+Epoch 00207: val_loss did not improve from 161.59165
+ - 267s - loss: 210.2759 - kl_loss: 9.3656 - val_loss: 240.9832 - val_kl_loss: 9.5467
+Epoch 208/8000
+
+Epoch 00208: val_loss did not improve from 161.59165
+ - 264s - loss: 203.7914 - kl_loss: 9.0025 - val_loss: 234.2013 - val_kl_loss: 8.7052
+Epoch 209/8000
+
+Epoch 00209: val_loss did not improve from 161.59165
+ - 266s - loss: 201.1835 - kl_loss: 8.8407 - val_loss: 223.5761 - val_kl_loss: 8.5798
+Epoch 210/8000
+
+Epoch 00210: val_loss did not improve from 161.59165
+ - 266s - loss: 201.8333 - kl_loss: 8.0046 - val_loss: 242.3380 - val_kl_loss: 7.6553
+Epoch 211/8000
+
+Epoch 00211: val_loss did not improve from 161.59165
+ - 269s - loss: 186.5355 - kl_loss: 7.9976 - val_loss: 205.5959 - val_kl_loss: 8.2126
+Epoch 212/8000
+
+Epoch 00212: val_loss did not improve from 161.59165
+ - 265s - loss: 188.8716 - kl_loss: 8.0611 - val_loss: 244.8166 - val_kl_loss: 7.6077
+Epoch 213/8000
+
+Epoch 00213: val_loss did not improve from 161.59165
+ - 266s - loss: 180.2971 - kl_loss: 7.6747 - val_loss: 236.9477 - val_kl_loss: 7.7028
+Epoch 00213: early stopping

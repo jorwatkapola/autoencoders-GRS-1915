@@ -1,0 +1,32 @@
+2020-11-26 13:42:01.104454: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2020-11-26 13:42:01.427766: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-26 13:42:01.428296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 11.91GiB freeMemory: 11.75GiB
+2020-11-26 13:42:01.428313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-11-26 13:42:01.714985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-26 13:42:01.715029: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-11-26 13:42:01.715038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-11-26 13:42:01.715288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11366 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2020-11-26 13:42:01.923198: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x55c82109ccf0
+Epoch 1/8000
+
+Epoch 00001: val_loss improved from inf to 66.23034, saving model to ../../model_weights/model_2020-11-26_13-42-02.h5
+ - 246s - loss: 62.0806 - kl_loss: 3.5869 - val_loss: 66.2303 - val_kl_loss: 3.3948
+Epoch 2/8000
+
+Epoch 00002: val_loss improved from 66.23034 to 66.20017, saving model to ../../model_weights/model_2020-11-26_13-42-02.h5
+ - 244s - loss: 62.0687 - kl_loss: 3.5834 - val_loss: 66.2002 - val_kl_loss: 3.4263
+Epoch 3/8000
+
+Epoch 00003: val_loss did not improve from 66.20017
+ - 244s - loss: 62.2107 - kl_loss: 3.5939 - val_loss: 66.5349 - val_kl_loss: 3.4774
+Epoch 4/8000
+
+Epoch 00004: val_loss did not improve from 66.20017
+ - 245s - loss: 62.5712 - kl_loss: 3.6036 - val_loss: 66.6770 - val_kl_loss: 3.4177
+Epoch 5/8000
+
+Epoch 00005: val_loss did not improve from 66.20017
+ - 246s - loss: 62.6647 - kl_loss: 3.6131 - val_loss: 66.7483 - val_kl_loss: 3.4651
