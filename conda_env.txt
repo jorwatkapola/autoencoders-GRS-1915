@@ -1,0 +1,9 @@
+# create a new environment and add it to jupyter notebook kernels
+conda create --name fingerprint_env python=3.5
+conda install -c anaconda jupyter
+conda install ipykernel
+python -m ipykernel install --user --name fingerprint_env --display-name "fingerprint_env"
+
+# install packages
+conda install numpy
+conda install matplotlib

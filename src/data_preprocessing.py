@@ -12,12 +12,6 @@ def segmentation(time_series, segment_length_sec, stride_sec, keep_time_stamps=T
     segment_length = segment_length_sec//input_cadence_sec
     stride = stride_sec//input_cadence_sec
     
-    if (segment_length).is_integer() and (stride).is_integer():
-        segment_length = int(segment_length)
-        stride = int(stride)
-    else:
-        raise ValueError("segment_length_sec and stride_sec should be multiples of input_cadence_sec")
-    
     segments=[]
     for start in range(0, len(time_series[0])-segment_length, stride):
         end=start+segment_length
