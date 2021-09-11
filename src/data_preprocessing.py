@@ -7,19 +7,17 @@ from termcolor import colored
 def simple_segmentation(time_series, segment_length, stride, keep_time_stamps, input_cadence_sec):
     
     segments = []
-    for start in range(0, int(len(time_series[0])-segment_length), stride): 
-        end=start+segment_length
-        # test that the segment has the expected duration in seconds
-        # if it doesn't then the segment likely goes outside the GTI
-        new_segment_time = time_series[0][start:end+1]
-        new_segment_duration_sec = new_segment_time[-1]-new_segment_time[0]
-        if new_segment_duration_sec != segment_length*input_cadence_sec: #don't allow segments outside of good time intervals
-            print("segment outside of good time intervals")
-            continue
+    start = 0
+    end = segment_length
+
+    while end <= len(time_series[0]):
         if keep_time_stamps==True:
             segments.append(time_series[:,start:end])
         else:
             segments.append(time_series[1:,start:end])
+        
+        start+=stride
+        end+=stride
             
     return np.array(segments)
 
@@ -46,13 +44,16 @@ def segmentation(time_series, segment_length_sec, stride_sec, keep_time_stamps=T
     else:
         for gap_ind, gap in enumerate(gaps):
             if gap_ind == 0:
-                segments_all.append(simple_segmentation(time_series[:,:gap+1], segment_length, stride, keep_time_stamps, input_cadence_sec))
+                gti = time_series[:,:gap+1]
+                segments_all.append(simple_segmentation(gti, segment_length, stride, keep_time_stamps, input_cadence_sec))
                 
             else:
-                segments_all.append(simple_segmentation(time_series[:,gaps[gap_ind-1]+1:gap+1], segment_length, stride, keep_time_stamps, input_cadence_sec))
+                gti = time_series[:,gaps[gap_ind-1]+1:gap+1]
+                segments_all.append(simple_segmentation(gti, segment_length, stride, keep_time_stamps, input_cadence_sec))
                 
             if gap == gaps[-1]:
-                segments_all.append(simple_segmentation(time_series[:,gap+1:], segment_length, stride, keep_time_stamps, input_cadence_sec))
+                gti = time_series[:,gap+1:]
+                segments_all.append(simple_segmentation(gti, segment_length, stride, keep_time_stamps, input_cadence_sec))
                 
         
         segments_all = [item for sublist in segments_all for item in sublist] # vstack the list of lists of data segments

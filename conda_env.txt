@@ -7,3 +7,6 @@ python -m ipykernel install --user --name fingerprint_env --display-name "finger
 # install packages
 conda install numpy
 conda install matplotlib
+conda install -c omnia termcolor
+conda install scikit-learn
+conda install pandas
